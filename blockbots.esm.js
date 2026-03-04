@@ -53,7 +53,7 @@ function cn(e) {
     });
   }), r;
 }
-var bt = { exports: {} };
+var wt = { exports: {} };
 const ln = {}, un = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: ln
@@ -237,7 +237,7 @@ function fn() {
       var Ce = H();
       Ce.md5 = Ce, Ce.md5.hmac = ye(), d ? e.exports = Ce : i.md5 = Ce;
     })();
-  })(bt)), bt.exports;
+  })(wt)), wt.exports;
 }
 var dn = fn();
 const Cr = () => {
@@ -274,9 +274,9 @@ const Cr = () => {
 }), wn = () => new Promise((e, t) => {
   e(pn());
 });
-var mn = "2.0.4", Ft = 500, Qt = "user-agent", Ae = "", er = "?", rt = "function", fe = "undefined", Re = "object", Pt = "string", z = "browser", ie = "cpu", ne = "device", X = "engine", G = "os", Ee = "result", y = "name", b = "type", m = "vendor", g = "version", V = "architecture", He = "major", w = "model", De = "console", T = "mobile", N = "tablet", I = "smarttv", te = "wearable", Ke = "xr", Ie = "embedded", Te = "inapp", zt = "brands", pe = "formFactors", Vt = "fullVersionList", ve = "platform", $t = "platformVersion", at = "bitness", de = "sec-ch-ua", yn = de + "-full-version-list", gn = de + "-arch", xn = de + "-" + at, En = de + "-form-factors", vn = de + "-" + T, An = de + "-" + w, Tr = de + "-" + ve, Rn = Tr + "-version", Fr = [zt, Vt, T, w, ve, $t, V, pe, at], Ge = "Amazon", ge = "Apple", tr = "ASUS", rr = "BlackBerry", he = "Google", nr = "Huawei", wt = "Lenovo", ir = "Honor", Xe = "LG", mt = "Microsoft", yt = "Motorola", gt = "Nvidia", or = "OnePlus", xt = "OPPO", Fe = "Samsung", sr = "Sharp", Pe = "Sony", Et = "Xiaomi", vt = "Zebra", ar = "Chrome", cr = "Chromium", ce = "Chromecast", Ze = "Edge", Be = "Firefox", Ue = "Opera", At = "Facebook", lr = "Sogou", xe = "Mobile ", Ne = " Browser", Bt = "Windows", Sn = typeof window !== fe, $ = Sn && window.navigator ? window.navigator : void 0, ue = $ && $.userAgentData ? $.userAgentData : void 0, On = function(e, t) {
+var mn = "2.0.4", Ft = 500, Qt = "user-agent", Ae = "", er = "?", nt = "function", fe = "undefined", Re = "object", Pt = "string", z = "browser", ie = "cpu", ne = "device", X = "engine", G = "os", Ee = "result", y = "name", b = "type", m = "vendor", g = "version", V = "architecture", He = "major", w = "model", De = "console", T = "mobile", N = "tablet", I = "smarttv", te = "wearable", Ke = "xr", Ie = "embedded", Te = "inapp", zt = "brands", pe = "formFactors", Vt = "fullVersionList", ve = "platform", $t = "platformVersion", ct = "bitness", de = "sec-ch-ua", yn = de + "-full-version-list", gn = de + "-arch", xn = de + "-" + ct, En = de + "-form-factors", vn = de + "-" + T, An = de + "-" + w, Tr = de + "-" + ve, Rn = Tr + "-version", Fr = [zt, Vt, T, w, ve, $t, V, pe, ct], Ge = "Amazon", ge = "Apple", tr = "ASUS", rr = "BlackBerry", he = "Google", nr = "Huawei", mt = "Lenovo", ir = "Honor", Xe = "LG", yt = "Microsoft", gt = "Motorola", xt = "Nvidia", or = "OnePlus", Et = "OPPO", Fe = "Samsung", sr = "Sharp", Pe = "Sony", vt = "Xiaomi", At = "Zebra", ar = "Chrome", cr = "Chromium", ce = "Chromecast", Qe = "Edge", Be = "Firefox", Ue = "Opera", Rt = "Facebook", lr = "Sogou", xe = "Mobile ", Ne = " Browser", Bt = "Windows", Sn = typeof window !== fe, $ = Sn && window.navigator ? window.navigator : void 0, ue = $ && $.userAgentData ? $.userAgentData : void 0, On = function(e, t) {
   var r = {}, n = t;
-  if (!nt(t)) {
+  if (!it(t)) {
     n = {};
     for (var i in t)
       for (var a in t[i])
@@ -285,7 +285,7 @@ var mn = "2.0.4", Ft = 500, Qt = "user-agent", Ae = "", er = "?", rt = "function
   for (var s in e)
     r[s] = n[s] && n[s].length % 2 === 0 ? n[s].concat(e[s]) : e[s];
   return r;
-}, ct = function(e) {
+}, lt = function(e) {
   for (var t = {}, r = 0; r < e.length; r++)
     t[e[r].toUpperCase()] = e[r];
   return t;
@@ -296,24 +296,24 @@ var mn = "2.0.4", Ft = 500, Qt = "user-agent", Ae = "", er = "?", rt = "function
     return !1;
   }
   return Oe(e) ? oe(t) == oe(e) : !1;
-}, nt = function(e, t) {
+}, it = function(e, t) {
   for (var r in e)
-    return /^(browser|cpu|device|engine|os)$/.test(r) || (t ? nt(e[r]) : !1);
+    return /^(browser|cpu|device|engine|os)$/.test(r) || (t ? it(e[r]) : !1);
 }, Oe = function(e) {
   return typeof e === Pt;
-}, Rt = function(e) {
+}, St = function(e) {
   if (e) {
     for (var t = [], r = Se(/\\?\"/g, e).split(","), n = 0; n < r.length; n++)
       if (r[n].indexOf(";") > -1) {
-        var i = it(r[n]).split(";v=");
+        var i = ot(r[n]).split(";v=");
         t[n] = { brand: i[0], version: i[1] };
       } else
-        t[n] = it(r[n]);
+        t[n] = ot(r[n]);
     return t;
   }
 }, oe = function(e) {
   return Oe(e) ? e.toLowerCase() : e;
-}, St = function(e) {
+}, Ot = function(e) {
   return Oe(e) ? Se(/[^\d\.]/g, e).split(".")[0] : void 0;
 }, se = function(e) {
   for (var t in e) {
@@ -325,17 +325,17 @@ var mn = "2.0.4", Ft = 500, Qt = "user-agent", Ae = "", er = "?", rt = "function
   return Oe(t) ? t.replace(e, Ae) : t;
 }, Le = function(e) {
   return Se(/\\?\"/g, e);
-}, it = function(e, t) {
+}, ot = function(e, t) {
   if (Oe(e))
     return e = Se(/^\s\s*/, e), typeof t === fe ? e : e.substring(0, Ft);
-}, Ot = function(e, t) {
+}, _t = function(e, t) {
   if (!(!e || !t))
     for (var r = 0, n, i, a, s, d, p; r < t.length && !d; ) {
       var f = t[r], x = t[r + 1];
       for (n = i = 0; n < f.length && !d && f[n]; )
         if (d = f[n++].exec(e), d)
           for (a = 0; a < x.length; a++)
-            p = d[++i], s = x[a], typeof s === Re && s.length > 0 ? s.length === 2 ? typeof s[1] == rt ? this[s[0]] = s[1].call(this, p) : this[s[0]] = s[1] : s.length >= 3 && (typeof s[1] === rt && !(s[1].exec && s[1].test) ? s.length > 3 ? this[s[0]] = p ? s[1].apply(this, s.slice(2)) : void 0 : this[s[0]] = p ? s[1].call(this, p, s[2]) : void 0 : s.length == 3 ? this[s[0]] = p ? p.replace(s[1], s[2]) : void 0 : s.length == 4 ? this[s[0]] = p ? s[3].call(this, p.replace(s[1], s[2])) : void 0 : s.length > 4 && (this[s[0]] = p ? s[3].apply(this, [p.replace(s[1], s[2])].concat(s.slice(4))) : void 0)) : this[s] = p || void 0;
+            p = d[++i], s = x[a], typeof s === Re && s.length > 0 ? s.length === 2 ? typeof s[1] == nt ? this[s[0]] = s[1].call(this, p) : this[s[0]] = s[1] : s.length >= 3 && (typeof s[1] === nt && !(s[1].exec && s[1].test) ? s.length > 3 ? this[s[0]] = p ? s[1].apply(this, s.slice(2)) : void 0 : this[s[0]] = p ? s[1].call(this, p, s[2]) : void 0 : s.length == 3 ? this[s[0]] = p ? p.replace(s[1], s[2]) : void 0 : s.length == 4 ? this[s[0]] = p ? s[3].call(this, p.replace(s[1], s[2])) : void 0 : s.length > 4 && (this[s[0]] = p ? s[3].apply(this, [p.replace(s[1], s[2])].concat(s.slice(4))) : void 0)) : this[s] = p || void 0;
       r += 2;
     }
 }, re = function(e, t) {
@@ -390,7 +390,7 @@ var mn = "2.0.4", Ft = 500, Qt = "user-agent", Ae = "", er = "?", rt = "function
       /webview.+edge\/([\w\.]+)/i
       // Microsoft Edge
     ],
-    [g, [y, Ze + " WebView"]],
+    [g, [y, Qe + " WebView"]],
     [
       /edg(?:e|ios|a)?\/([\w\.]+)/i
     ],
@@ -492,7 +492,7 @@ var mn = "2.0.4", Ft = 500, Qt = "user-agent", Ae = "", er = "?", rt = "function
       /slbrowser\/([\w\.]+)/i
       // Smart Lenovo Browser
     ],
-    [g, [y, "Smart " + wt + Ne]],
+    [g, [y, "Smart " + mt + Ne]],
     [
       /(avast|avg)\/([\w\.]+)/i
       // Avast/AVG Secure Browser
@@ -589,7 +589,7 @@ var mn = "2.0.4", Ft = 500, Qt = "user-agent", Ae = "", er = "?", rt = "function
       /((?:fban\/fbios|fb_iab\/fb4a)(?!.+fbav)|;fbav\/([\w\.]+);)/i
       // Facebook App for iOS & Android
     ],
-    [[y, At], g, [b, Te]],
+    [[y, Rt], g, [b, Te]],
     [
       /(kakao(?:talk|story))[\/ ]([\w\.]+)/i,
       // Kakao App
@@ -638,7 +638,7 @@ var mn = "2.0.4", Ft = 500, Qt = "user-agent", Ae = "", er = "?", rt = "function
       /wv\).+chrome\/([\w\.]+).+edgw\//i
       // Edge WebView2
     ],
-    [g, [y, Ze + " WebView2"]],
+    [g, [y, Qe + " WebView2"]],
     [
       / wv\).+(chrome)\/([\w\.]+)/i
       // Chrome WebView
@@ -835,7 +835,7 @@ var mn = "2.0.4", Ft = 500, Qt = "user-agent", Ae = "", er = "?", rt = "function
       /\b((?:red)?mi[-_ ]?pad[\w- ]*)(?: bui|\))/i
       // Mi Pad tablets
     ],
-    [[w, /_/g, " "], [m, Et], [b, N]],
+    [[w, /_/g, " "], [m, vt], [b, N]],
     [
       /\b(poco[\w ]+|m2\d{3}j\d\d[a-z]{2})(?: bui|\))/i,
       // Xiaomi POCO
@@ -851,7 +851,7 @@ var mn = "2.0.4", Ft = 500, Qt = "user-agent", Ae = "", er = "?", rt = "function
       // Xiaomi Mi
       / ([\w ]+) miui\/v?\d/i
     ],
-    [[w, /_/g, " "], [m, Et], [b, T]],
+    [[w, /_/g, " "], [m, vt], [b, T]],
     [
       // OnePlus
       /droid.+; (cph2[3-6]\d[13579]|((gm|hd)19|(ac|be|in|kb)20|(d[en]|eb|le|mt)21|ne22)[0-2]\d|p[g-k]\w[1m]10)\b/i,
@@ -863,11 +863,11 @@ var mn = "2.0.4", Ft = 500, Qt = "user-agent", Ae = "", er = "?", rt = "function
       /; (\w+) bui.+ oppo/i,
       /\b(cph[12]\d{3}|p(?:af|c[al]|d\w|e[ar])[mt]\d0|x9007|a101op)\b/i
     ],
-    [w, [m, xt], [b, T]],
+    [w, [m, Et], [b, T]],
     [
       /\b(opd2(\d{3}a?))(?: bui|\))/i
     ],
-    [w, [m, re, { OnePlus: ["203", "304", "403", "404", "413", "415"], "*": xt }], [b, N]],
+    [w, [m, re, { OnePlus: ["203", "304", "403", "404", "413", "415"], "*": Et }], [b, N]],
     [
       // BLU
       /(vivo (5r?|6|8l?|go|one|s|x[il]?[2-4]?)[\w\+ ]*)(?: bui|\))/i
@@ -890,22 +890,22 @@ var mn = "2.0.4", Ft = 500, Qt = "user-agent", Ae = "", er = "?", rt = "function
       /(ideatab[-\w ]+|602lv|d-42a|a101lv|a2109a|a3500-hv|s[56]000|pb-6505[my]|tb-?x?\d{3,4}(?:f[cu]|xu|[av])|yt\d?-[jx]?\d+[lfmx])( bui|;|\)|\/)/i,
       /lenovo ?(b[68]0[08]0-?[hf]?|tab(?:[\w- ]+?)|tb[\w-]{6,7})( bui|;|\)|\/)/i
     ],
-    [w, [m, wt], [b, N]],
+    [w, [m, mt], [b, N]],
     [
       /lenovo[-_ ]?([-\w ]+?)(?: bui|\)|\/)/i
     ],
-    [w, [m, wt], [b, T]],
+    [w, [m, mt], [b, T]],
     [
       // Motorola
       /\b(milestone|droid(?:[2-4x]| (?:bionic|x2|pro|razr))?:?( 4g)?)\b[\w ]+build\//i,
       /\bmot(?:orola)?[- ]([\w\s]+)(\)| bui)/i,
       /((?:moto(?! 360)[-\w\(\) ]+|xt\d{3,4}[cgkosw\+]?[-\d]*|nexus 6)(?= bui|\)))/i
     ],
-    [w, [m, yt], [b, T]],
+    [w, [m, gt], [b, T]],
     [
       /\b(mz60\d|xoom[2 ]{0,2}) build\//i
     ],
-    [w, [m, yt], [b, N]],
+    [w, [m, gt], [b, N]],
     [
       // LG
       /((?=lg)?[vl]k\-?\d{3}) bui| 3\.[-\w; ]{10}lg?-([06cv9]{3,4})/i
@@ -1105,7 +1105,7 @@ var mn = "2.0.4", Ft = 500, Qt = "user-agent", Ae = "", er = "?", rt = "function
       /(surface duo)/i
       // Surface Duo
     ],
-    [w, [m, mt], [b, N]],
+    [w, [m, yt], [b, N]],
     [
       /droid [\d\.]+; (fp\du?)(?: b|\))/i
       // Fairphone
@@ -1115,7 +1115,7 @@ var mn = "2.0.4", Ft = 500, Qt = "user-agent", Ae = "", er = "?", rt = "function
       /((?:tegranote|shield t(?!.+d tv))[\w- ]*?)(?: b|\))/i
       // Nvidia Tablets
     ],
-    [w, [m, gt], [b, N]],
+    [w, [m, xt], [b, N]],
     [
       /(sprint) (\w+)/i
       // Sprint Phones
@@ -1125,16 +1125,16 @@ var mn = "2.0.4", Ft = 500, Qt = "user-agent", Ae = "", er = "?", rt = "function
       /(kin\.[onetw]{3})/i
       // Microsoft Kin
     ],
-    [[w, /\./g, " "], [m, mt], [b, T]],
+    [[w, /\./g, " "], [m, yt], [b, T]],
     [
       /droid.+; ([c6]+|et5[16]|mc[239][23]x?|vc8[03]x?)\)/i
       // Zebra
     ],
-    [w, [m, vt], [b, N]],
+    [w, [m, At], [b, N]],
     [
       /droid.+; (ec30|ps20|tc[2-8]\d[kx])\)/i
     ],
-    [w, [m, vt], [b, T]],
+    [w, [m, At], [b, T]],
     [
       ///////////////////
       // SMARTTVS
@@ -1187,7 +1187,7 @@ var mn = "2.0.4", Ft = 500, Qt = "user-agent", Ae = "", er = "?", rt = "function
       /(portaltv)/i
       // Facebook Portal TV
     ],
-    [w, [m, At], [b, I]],
+    [w, [m, Rt], [b, I]],
     [
       /droid.+aft(\w+)( bui|\))/i
       // Fire TV
@@ -1197,7 +1197,7 @@ var mn = "2.0.4", Ft = 500, Qt = "user-agent", Ae = "", er = "?", rt = "function
       /(shield \w+ tv)/i
       // Nvidia Shield TV
     ],
-    [w, [m, gt], [b, I]],
+    [w, [m, xt], [b, I]],
     [
       /\(dtv[\);].+(aquos)/i,
       /(aquos-tv[\w ]+)\)/i
@@ -1213,7 +1213,7 @@ var mn = "2.0.4", Ft = 500, Qt = "user-agent", Ae = "", er = "?", rt = "function
       /(mi(tv|box)-?\w+) bui/i
       // Xiaomi
     ],
-    [w, [m, Et], [b, I]],
+    [w, [m, vt], [b, I]],
     [
       /Hbbtv.*(technisat) (.*);/i
       // TechniSAT
@@ -1225,7 +1225,7 @@ var mn = "2.0.4", Ft = 500, Qt = "user-agent", Ae = "", er = "?", rt = "function
       /hbbtv\/\d+\.\d+\.\d+ +\([\w\+ ]*; *([\w\d][^;]*);([^;]*)/i
       // HbbTV devices
     ],
-    [[m, /.+\/(\w+)/, "$1", re, { LG: "lge" }], [w, it], [b, I]],
+    [[m, /.+\/(\w+)/, "$1", re, { LG: "lge" }], [w, ot], [b, I]],
     [
       // SmartTV from Unidentified Vendors
       /droid.+; ([\w- ]+) (?:android tv|smart[- ]?tv)/i
@@ -1247,7 +1247,7 @@ var mn = "2.0.4", Ft = 500, Qt = "user-agent", Ae = "", er = "?", rt = "function
       /\b(xbox(?: one)?(?!; xbox))[\); ]/i
       // Microsoft Xbox
     ],
-    [w, [m, mt], [b, De]],
+    [w, [m, yt], [b, De]],
     [
       /(ouya)/i,
       // Ouya
@@ -1261,7 +1261,7 @@ var mn = "2.0.4", Ft = 500, Qt = "user-agent", Ae = "", er = "?", rt = "function
       /droid.+; (shield)( bui|\))/i
       // Nvidia Portable
     ],
-    [w, [m, gt], [b, De]],
+    [w, [m, xt], [b, De]],
     [
       ///////////////////
       // WEARABLES
@@ -1281,7 +1281,7 @@ var mn = "2.0.4", Ft = 500, Qt = "user-agent", Ae = "", er = "?", rt = "function
       /(ow(?:19|20)?we?[1-3]{1,3})/i
       // Oppo Watch
     ],
-    [w, [m, xt], [b, te]],
+    [w, [m, Et], [b, te]],
     [
       /(watch)(?: ?os[,\/]|\d,\d\/)[\d\.]+/i
       // Apple Watch
@@ -1296,7 +1296,7 @@ var mn = "2.0.4", Ft = 500, Qt = "user-agent", Ae = "", er = "?", rt = "function
       /(moto 360)/i
       // Motorola 360
     ],
-    [w, [m, yt], [b, te]],
+    [w, [m, gt], [b, te]],
     [
       /(smartwatch 3)/i
       // Sony SmartWatch
@@ -1310,7 +1310,7 @@ var mn = "2.0.4", Ft = 500, Qt = "user-agent", Ae = "", er = "?", rt = "function
     [
       /droid.+; (wt63?0{2,3})\)/i
     ],
-    [w, [m, vt], [b, te]],
+    [w, [m, At], [b, te]],
     [
       ///////////////////
       // XR
@@ -1328,7 +1328,7 @@ var mn = "2.0.4", Ft = 500, Qt = "user-agent", Ae = "", er = "?", rt = "function
       /(quest( \d| pro)?s?).+vr/i
       // Meta Quest
     ],
-    [w, [m, At], [b, Ke]],
+    [w, [m, Rt], [b, Ke]],
     [
       /mobile vr; rv.+firefox/i
       // Unidentifiable VR device using Firefox Reality / Wolvic
@@ -1385,7 +1385,7 @@ var mn = "2.0.4", Ft = 500, Qt = "user-agent", Ae = "", er = "?", rt = "function
       /windows.+ edge\/([\w\.]+)/i
       // EdgeHTML
     ],
-    [g, [y, Ze + "HTML"]],
+    [g, [y, Qe + "HTML"]],
     [
       /(arkweb)\/([\w\.]+)/i
       // ArkWeb
@@ -1657,15 +1657,15 @@ var mn = "2.0.4", Ft = 500, Qt = "user-agent", Ae = "", er = "?", rt = "function
 function Pr(e, t) {
   if (e = e || {}, se.call(this, Fr), t)
     se.call(this, [
-      [zt, Rt(e[de])],
-      [Vt, Rt(e[yn])],
+      [zt, St(e[de])],
+      [Vt, St(e[yn])],
       [T, /\?1/.test(e[vn])],
       [w, Le(e[An])],
       [ve, Le(e[Tr])],
       [$t, Le(e[Rn])],
       [V, Le(e[gn])],
-      [pe, Rt(e[En])],
-      [at, Le(e[xn])]
+      [pe, St(e[En])],
+      [ct, Le(e[xn])]
     ]);
   else
     for (var r in e)
@@ -1682,7 +1682,7 @@ function hr(e, t, r, n) {
     if ($ && $.userAgent == this.ua)
       switch (this.itemType) {
         case z:
-          $.brave && typeof $.brave.isBrave == rt && this.set(y, "Brave");
+          $.brave && typeof $.brave.isBrave == nt && this.set(y, "Brave");
           break;
         case ne:
           !this.get(b) && ue && ue[T] && this.set(b, T), this.get(w) == "Macintosh" && $ && typeof $.standalone !== fe && $.maxTouchPoints && $.maxTouchPoints > 2 && this.set(w, "iPad").set(b, N);
@@ -1698,7 +1698,7 @@ function hr(e, t, r, n) {
       }
     return this;
   }, this.parseUA = function() {
-    return this.itemType != Ee && Ot.call(this.data, this.ua, this.rgxMap), this.itemType == z && this.set(He, St(this.get(g))), this;
+    return this.itemType != Ee && _t.call(this.data, this.ua, this.rgxMap), this.itemType == z && this.set(He, Ot(this.get(g))), this;
   }, this.parseCH = function() {
     var i = this.uaCH, a = this.rgxMap;
     switch (this.itemType) {
@@ -1708,17 +1708,17 @@ function hr(e, t, r, n) {
         if (s)
           for (var p in s) {
             var f = s[p].brand || s[p], x = s[p].version;
-            this.itemType == z && !/not.a.brand/i.test(f) && (!d || /Chrom/.test(d) && f != cr || d == Ze && /WebView2/.test(f)) && (f = re(f, _n), d = this.get(y), d && !/Chrom/.test(d) && /Chrom/.test(f) || this.set(y, f).set(g, x).set(He, St(x)), d = f), this.itemType == X && f == cr && this.set(g, x);
+            this.itemType == z && !/not.a.brand/i.test(f) && (!d || /Chrom/.test(d) && f != cr || d == Qe && /WebView2/.test(f)) && (f = re(f, _n), d = this.get(y), d && !/Chrom/.test(d) && /Chrom/.test(f) || this.set(y, f).set(g, x).set(He, Ot(x)), d = f), this.itemType == X && f == cr && this.set(g, x);
           }
         break;
       case ie:
         var A = i[V];
-        A && (A && i[at] == "64" && (A += "64"), Ot.call(this.data, A + ";", a));
+        A && (A && i[ct] == "64" && (A += "64"), _t.call(this.data, A + ";", a));
         break;
       case ne:
         if (i[T] && this.set(b, T), i[w] && (this.set(w, i[w]), !this.get(b) || !this.get(m))) {
           var _ = {};
-          Ot.call(_, "droid 9; " + i[w] + ")", a), !this.get(b) && _.type && this.set(b, _.type), !this.get(m) && _.vendor && this.set(m, _.vendor);
+          _t.call(_, "droid 9; " + i[w] + ")", a), !this.get(b) && _.type && this.set(b, _.type), !this.get(m) && _.vendor && this.set(m, _.vendor);
         }
         if (i[pe]) {
           var P;
@@ -1734,7 +1734,7 @@ function hr(e, t, r, n) {
         var k = i[ve];
         if (k) {
           var S = i[$t];
-          k == Bt && (S = parseInt(St(S), 10) >= 13 ? "11" : "10"), this.set(y, k).set(g, S);
+          k == Bt && (S = parseInt(Ot(S), 10) >= 13 ? "11" : "10"), this.set(y, k).set(g, S);
         }
         this.get(y) == Bt && i[w] == "Xbox" && this.set(y, "Xbox").set(g, void 0);
         break;
@@ -1754,7 +1754,7 @@ function hr(e, t, r, n) {
   ]), this;
 }
 function ae(e, t, r) {
-  if (typeof e === Re ? (nt(e, !0) ? (typeof t === Re && (r = t), t = e) : (r = e, t = void 0), e = void 0) : typeof e === Pt && !nt(t, !0) && (r = t, t = void 0), r && typeof r.append === rt) {
+  if (typeof e === Re ? (it(e, !0) ? (typeof t === Re && (r = t), t = e) : (r = e, t = void 0), e = void 0) : typeof e === Pt && !it(t, !0) && (r = t, t = void 0), r && typeof r.append === nt) {
     var n = {};
     r.forEach(function(p, f) {
       n[f] = p;
@@ -1789,15 +1789,15 @@ function ae(e, t, r) {
       return i;
     }],
     ["setUA", function(p) {
-      return Oe(p) && (i = p.length > Ft ? it(p, Ft) : p), this;
+      return Oe(p) && (i = p.length > Ft ? ot(p, Ft) : p), this;
     }]
   ]).setUA(i), this;
 }
 ae.VERSION = mn;
-ae.BROWSER = ct([y, g, He, b]);
-ae.CPU = ct([V]);
-ae.DEVICE = ct([w, m, b, De, T, I, N, te, Ie]);
-ae.ENGINE = ae.OS = ct([y, g]);
+ae.BROWSER = lt([y, g, He, b]);
+ae.CPU = lt([V]);
+ae.DEVICE = lt([w, m, b, De, T, I, N, te, Ie]);
+ae.ENGINE = ae.OS = lt([y, g]);
 let pr = !1;
 const Cn = () => pr ? Promise.resolve(!0) : new Promise((e) => {
   const t = document.createElement("iframe");
@@ -1810,10 +1810,10 @@ function Br(e, t) {
     return e.apply(t, arguments);
   };
 }
-const { toString: Tn } = Object.prototype, { getPrototypeOf: Wt } = Object, { iterator: lt, toStringTag: Ur } = Symbol, ut = /* @__PURE__ */ ((e) => (t) => {
+const { toString: Tn } = Object.prototype, { getPrototypeOf: Wt } = Object, { iterator: ut, toStringTag: Ur } = Symbol, ft = /* @__PURE__ */ ((e) => (t) => {
   const r = Tn.call(t);
   return e[r] || (e[r] = r.slice(8, -1).toLowerCase());
-})(/* @__PURE__ */ Object.create(null)), Y = (e) => (e = e.toLowerCase(), (t) => ut(t) === e), ft = (e) => (t) => typeof t === e, { isArray: _e } = Array, je = ft("undefined");
+})(/* @__PURE__ */ Object.create(null)), Y = (e) => (e = e.toLowerCase(), (t) => ft(t) === e), dt = (e) => (t) => typeof t === e, { isArray: _e } = Array, je = dt("undefined");
 function ze(e) {
   return e !== null && !je(e) && e.constructor !== null && !je(e.constructor) && W(e.constructor.isBuffer) && e.constructor.isBuffer(e);
 }
@@ -1822,11 +1822,11 @@ function Fn(e) {
   let t;
   return typeof ArrayBuffer < "u" && ArrayBuffer.isView ? t = ArrayBuffer.isView(e) : t = e && e.buffer && Nr(e.buffer), t;
 }
-const Pn = ft("string"), W = ft("function"), Lr = ft("number"), Ve = (e) => e !== null && typeof e == "object", Bn = (e) => e === !0 || e === !1, Qe = (e) => {
-  if (ut(e) !== "object")
+const Pn = dt("string"), W = dt("function"), Lr = dt("number"), Ve = (e) => e !== null && typeof e == "object", Bn = (e) => e === !0 || e === !1, et = (e) => {
+  if (ft(e) !== "object")
     return !1;
   const t = Wt(e);
-  return (t === null || t === Object.prototype || Object.getPrototypeOf(t) === null) && !(Ur in e) && !(lt in e);
+  return (t === null || t === Object.prototype || Object.getPrototypeOf(t) === null) && !(Ur in e) && !(ut in e);
 }, Un = (e) => {
   if (!Ve(e) || ze(e))
     return !1;
@@ -1837,7 +1837,7 @@ const Pn = ft("string"), W = ft("function"), Lr = ft("number"), Ve = (e) => e !=
   }
 }, Nn = Y("Date"), Ln = Y("File"), Mn = Y("Blob"), Dn = Y("FileList"), In = (e) => Ve(e) && W(e.pipe), Hn = (e) => {
   let t;
-  return e && (typeof FormData == "function" && e instanceof FormData || W(e.append) && ((t = ut(e)) === "formdata" || // detect form-data instance
+  return e && (typeof FormData == "function" && e instanceof FormData || W(e.append) && ((t = ft(e)) === "formdata" || // detect form-data instance
   t === "object" && W(e.toString) && e.toString() === "[object FormData]"));
 }, jn = Y("URLSearchParams"), [qn, zn, Vn, $n] = ["ReadableStream", "Request", "Response", "Headers"].map(Y), Wn = (e) => e.trim ? e.trim() : e.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, "");
 function $e(e, t, { allOwnKeys: r = !1 } = {}) {
@@ -1871,7 +1871,7 @@ const be = typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : typ
 function Nt() {
   const { caseless: e } = Dr(this) && this || {}, t = {}, r = (n, i) => {
     const a = e && Mr(t, i) || i;
-    Qe(t[a]) && Qe(n) ? t[a] = Nt(t[a], n) : Qe(n) ? t[a] = Nt({}, n) : _e(n) ? t[a] = n.slice() : t[a] = n;
+    et(t[a]) && et(n) ? t[a] = Nt(t[a], n) : et(n) ? t[a] = Nt({}, n) : _e(n) ? t[a] = n.slice() : t[a] = n;
   };
   for (let n = 0, i = arguments.length; n < i; n++)
     arguments[n] && $e(arguments[n], r);
@@ -1907,7 +1907,7 @@ const Jn = (e, t, r, { allOwnKeys: n } = {}) => ($e(t, (i, a) => {
     r[t] = e[t];
   return r;
 }, Qn = /* @__PURE__ */ ((e) => (t) => e && t instanceof e)(typeof Uint8Array < "u" && Wt(Uint8Array)), ei = (e, t) => {
-  const n = (e && e[lt]).call(e);
+  const n = (e && e[ut]).call(e);
   let i;
   for (; (i = n.next()) && !i.done; ) {
     const a = i.value;
@@ -1955,7 +1955,7 @@ const Jn = (e, t, r, { allOwnKeys: n } = {}) => ($e(t, (i, a) => {
 }, ai = () => {
 }, ci = (e, t) => e != null && Number.isFinite(e = +e) ? e : t;
 function li(e) {
-  return !!(e && W(e.append) && e[Ur] === "FormData" && e[lt]);
+  return !!(e && W(e.append) && e[Ur] === "FormData" && e[ut]);
 }
 const ui = (e) => {
   const t = new Array(10), r = (n, i) => {
@@ -1983,7 +1983,7 @@ const ui = (e) => {
 }))(`axios@${Math.random()}`, []) : (r) => setTimeout(r))(
   typeof setImmediate == "function",
   W(be.postMessage)
-), hi = typeof queueMicrotask < "u" ? queueMicrotask.bind(be) : typeof process < "u" && process.nextTick || Hr, pi = (e) => e != null && W(e[lt]), h = {
+), hi = typeof queueMicrotask < "u" ? queueMicrotask.bind(be) : typeof process < "u" && process.nextTick || Hr, pi = (e) => e != null && W(e[ut]), h = {
   isArray: _e,
   isArrayBuffer: Nr,
   isBuffer: ze,
@@ -1993,7 +1993,7 @@ const ui = (e) => {
   isNumber: Lr,
   isBoolean: Bn,
   isObject: Ve,
-  isPlainObject: Qe,
+  isPlainObject: et,
   isEmptyObject: Un,
   isReadableStream: qn,
   isRequest: zn,
@@ -2016,7 +2016,7 @@ const ui = (e) => {
   stripBOM: Kn,
   inherits: Gn,
   toFlatObject: Xn,
-  kindOf: ut,
+  kindOf: ft,
   kindOfTest: Y,
   endsWith: Yn,
   toArray: Zn,
@@ -2111,7 +2111,7 @@ function wi(e) {
 const mi = h.toFlatObject(h, {}, null, function(t) {
   return /^is[A-Z]/.test(t);
 });
-function dt(e, t, r) {
+function ht(e, t, r) {
   if (!h.isObject(e))
     throw new TypeError("target must be an object");
   t = t || new FormData(), r = h.toFlatObject(r, {
@@ -2189,7 +2189,7 @@ function mr(e) {
   });
 }
 function Jt(e, t) {
-  this._pairs = [], e && dt(e, this, t);
+  this._pairs = [], e && ht(e, this, t);
 }
 const Vr = Jt.prototype;
 Vr.append = function(t, r) {
@@ -2300,7 +2300,7 @@ self instanceof WorkerGlobalScope && typeof self.importScripts == "function", Si
   ...vi
 };
 function _i(e, t) {
-  return dt(e, new j.classes.URLSearchParams(), {
+  return ht(e, new j.classes.URLSearchParams(), {
     visitor: function(r, n, i, a) {
       return j.isNode && h.isBuffer(r) ? (this.append(n, r.toString("base64")), !1) : a.defaultVisitor.apply(this, arguments);
     },
@@ -2363,7 +2363,7 @@ const We = {
         return _i(t, this.formSerializer).toString();
       if ((d = h.isFileList(t)) || n.indexOf("multipart/form-data") > -1) {
         const p = this.env && this.env.FormData;
-        return dt(
+        return ht(
           d ? { "files[]": t } : t,
           p && new p(),
           this.formSerializer
@@ -2442,8 +2442,8 @@ const Fi = h.toObjectSet([
 function Me(e) {
   return e && String(e).trim().toLowerCase();
 }
-function et(e) {
-  return e === !1 || e == null ? e : h.isArray(e) ? e.map(et) : String(e);
+function tt(e) {
+  return e === !1 || e == null ? e : h.isArray(e) ? e.map(tt) : String(e);
 }
 function Bi(e) {
   const t = /* @__PURE__ */ Object.create(null), r = /([^\s,;=]+)\s*(?:=\s*([^,;]+))?/g;
@@ -2453,7 +2453,7 @@ function Bi(e) {
   return t;
 }
 const Ui = (e) => /^[-_a-zA-Z0-9^`|~,!#$%&'*+.]+$/.test(e.trim());
-function _t(e, t, r, n, i) {
+function kt(e, t, r, n, i) {
   if (h.isFunction(n))
     return n.call(this, t, r);
   if (i && (t = r), !!h.isString(t)) {
@@ -2488,7 +2488,7 @@ let J = class {
       if (!x)
         throw new Error("header name must be a non-empty string");
       const A = h.findKey(i, x);
-      (!A || i[A] === void 0 || f === !0 || f === void 0 && i[A] !== !1) && (i[A || p] = et(d));
+      (!A || i[A] === void 0 || f === !0 || f === void 0 && i[A] !== !1) && (i[A || p] = tt(d));
     }
     const s = (d, p) => h.forEach(d, (f, x) => a(f, x, p));
     if (h.isPlainObject(t) || t instanceof this.constructor)
@@ -2527,7 +2527,7 @@ let J = class {
   has(t, r) {
     if (t = Me(t), t) {
       const n = h.findKey(this, t);
-      return !!(n && this[n] !== void 0 && (!r || _t(this, this[n], n, r)));
+      return !!(n && this[n] !== void 0 && (!r || kt(this, this[n], n, r)));
     }
     return !1;
   }
@@ -2537,7 +2537,7 @@ let J = class {
     function a(s) {
       if (s = Me(s), s) {
         const d = h.findKey(n, s);
-        d && (!r || _t(n, n[d], d, r)) && (delete n[d], i = !0);
+        d && (!r || kt(n, n[d], d, r)) && (delete n[d], i = !0);
       }
     }
     return h.isArray(t) ? t.forEach(a) : a(t), i;
@@ -2547,7 +2547,7 @@ let J = class {
     let n = r.length, i = !1;
     for (; n--; ) {
       const a = r[n];
-      (!t || _t(this, this[a], a, t, !0)) && (delete this[a], i = !0);
+      (!t || kt(this, this[a], a, t, !0)) && (delete this[a], i = !0);
     }
     return i;
   }
@@ -2556,11 +2556,11 @@ let J = class {
     return h.forEach(this, (i, a) => {
       const s = h.findKey(n, a);
       if (s) {
-        r[s] = et(i), delete r[a];
+        r[s] = tt(i), delete r[a];
         return;
       }
       const d = t ? Ni(a) : String(a).trim();
-      d !== a && delete r[a], r[d] = et(i), n[d] = !0;
+      d !== a && delete r[a], r[d] = tt(i), n[d] = !0;
     }), this;
   }
   concat(...t) {
@@ -2614,7 +2614,7 @@ h.reduceDescriptors(J.prototype, ({ value: e }, t) => {
   };
 });
 h.freezeMethods(J);
-function kt(e, t) {
+function Ct(e, t) {
   const r = this || We, n = t || r, i = J.from(n.headers);
   let a = n.data;
   return h.forEach(e, function(d) {
@@ -2672,7 +2672,7 @@ function Ii(e, t) {
     }, n - A)));
   }, () => i && s(i)];
 }
-const ot = (e, t, r = 3) => {
+const st = (e, t, r = 3) => {
   let n = 0;
   const i = Di(50, 250);
   return Ii((a) => {
@@ -2871,7 +2871,7 @@ const Yr = (e) => {
       )), S = null;
     }, a === void 0 && s.setContentType(null), "setRequestHeader" in S && h.forEach(s.toJSON(), function(K, H) {
       S.setRequestHeader(H, K);
-    }), h.isUndefined(i.withCredentials) || (S.withCredentials = !!i.withCredentials), d && d !== "json" && (S.responseType = i.responseType), f && ([_, R] = ot(f, !0), S.addEventListener("progress", _)), p && S.upload && ([A, P] = ot(p), S.upload.addEventListener("progress", A), S.upload.addEventListener("loadend", P)), (i.cancelToken || i.signal) && (x = (M) => {
+    }), h.isUndefined(i.withCredentials) || (S.withCredentials = !!i.withCredentials), d && d !== "json" && (S.responseType = i.responseType), f && ([_, R] = st(f, !0), S.addEventListener("progress", _)), p && S.upload && ([A, P] = st(p), S.upload.addEventListener("progress", A), S.upload.addEventListener("loadend", P)), (i.cancelToken || i.signal) && (x = (M) => {
       S && (n(!M || M.type ? new ke(null, e, S) : M), S.abort(), S = null);
     }, i.cancelToken && i.cancelToken.subscribe(x), i.signal && (i.signal.aborted ? x() : i.signal.addEventListener("abort", x)));
     const B = Mi(i.url);
@@ -2961,7 +2961,7 @@ const Yr = (e) => {
   }, {
     highWaterMark: 2
   });
-}, ht = typeof fetch == "function" && typeof Request == "function" && typeof Response == "function", Zr = ht && typeof ReadableStream == "function", Xi = ht && (typeof TextEncoder == "function" ? /* @__PURE__ */ ((e) => (t) => e.encode(t))(new TextEncoder()) : async (e) => new Uint8Array(await new Response(e).arrayBuffer())), Qr = (e, ...t) => {
+}, pt = typeof fetch == "function" && typeof Request == "function" && typeof Response == "function", Zr = pt && typeof ReadableStream == "function", Xi = pt && (typeof TextEncoder == "function" ? /* @__PURE__ */ ((e) => (t) => e.encode(t))(new TextEncoder()) : async (e) => new Uint8Array(await new Response(e).arrayBuffer())), Qr = (e, ...t) => {
   try {
     return !!e(...t);
   } catch {
@@ -2977,12 +2977,12 @@ const Yr = (e) => {
     }
   }).headers.has("Content-Type");
   return e && !t;
-}), Rr = 64 * 1024, Dt = Zr && Qr(() => h.isReadableStream(new Response("").body)), st = {
+}), Rr = 64 * 1024, Dt = Zr && Qr(() => h.isReadableStream(new Response("").body)), at = {
   stream: Dt && ((e) => e.body)
 };
-ht && ((e) => {
+pt && ((e) => {
   ["text", "arrayBuffer", "blob", "formData", "stream"].forEach((t) => {
-    !st[t] && (st[t] = h.isFunction(e[t]) ? (r) => r[t]() : (r, n) => {
+    !at[t] && (at[t] = h.isFunction(e[t]) ? (r) => r[t]() : (r, n) => {
       throw new F(`Response type '${t}' is not supported`, F.ERR_NOT_SUPPORT, n);
     });
   });
@@ -3004,7 +3004,7 @@ const Zi = async (e) => {
 }, Qi = async (e, t) => {
   const r = h.toFiniteNumber(e.getContentLength());
   return r ?? Zi(t);
-}, eo = ht && (async (e) => {
+}, eo = pt && (async (e) => {
   let {
     url: t,
     method: r,
@@ -3035,7 +3035,7 @@ const Zi = async (e) => {
       if (h.isFormData(n) && (Z = H.headers.get("content-type")) && x.setContentType(Z), H.body) {
         const [Q, ye] = xr(
           S,
-          ot(Er(p))
+          st(Er(p))
         );
         n = Ar(H.body, Rr, Q, ye);
       }
@@ -3060,7 +3060,7 @@ const Zi = async (e) => {
       });
       const Z = h.toFiniteNumber(B.headers.get("content-length")), [Q, ye] = d && xr(
         Z,
-        ot(Er(d), !0)
+        st(Er(d), !0)
       ) || [];
       B = new Response(
         Ar(B.body, Rr, Q, () => {
@@ -3070,7 +3070,7 @@ const Zi = async (e) => {
       );
     }
     f = f || "text";
-    let K = await st[h.findKey(st, f) || "text"](B, e);
+    let K = await at[h.findKey(at, f) || "text"](B, e);
     return !M && k && k(), await new Promise((H, Z) => {
       Gr(H, Z, {
         data: K,
@@ -3134,36 +3134,36 @@ const Sr = (e) => `- ${e}`, to = (e) => h.isFunction(e) || e === null || e === !
   },
   adapters: It
 };
-function Ct(e) {
+function Tt(e) {
   if (e.cancelToken && e.cancelToken.throwIfRequested(), e.signal && e.signal.aborted)
     throw new ke(null, e);
 }
 function Or(e) {
-  return Ct(e), e.headers = J.from(e.headers), e.data = kt.call(
+  return Tt(e), e.headers = J.from(e.headers), e.data = Ct.call(
     e,
     e.transformRequest
   ), ["post", "put", "patch"].indexOf(e.method) !== -1 && e.headers.setContentType("application/x-www-form-urlencoded", !1), en.getAdapter(e.adapter || We.adapter)(e).then(function(n) {
-    return Ct(e), n.data = kt.call(
+    return Tt(e), n.data = Ct.call(
       e,
       e.transformResponse,
       n
     ), n.headers = J.from(n.headers), n;
   }, function(n) {
-    return Kr(n) || (Ct(e), n && n.response && (n.response.data = kt.call(
+    return Kr(n) || (Tt(e), n && n.response && (n.response.data = Ct.call(
       e,
       e.transformResponse,
       n.response
     ), n.response.headers = J.from(n.response.headers))), Promise.reject(n);
   });
 }
-const tn = "1.11.0", pt = {};
+const tn = "1.11.0", bt = {};
 ["object", "boolean", "number", "function", "string", "symbol"].forEach((e, t) => {
-  pt[e] = function(n) {
+  bt[e] = function(n) {
     return typeof n === e || "a" + (t < 1 ? "n " : " ") + e;
   };
 });
 const _r = {};
-pt.transitional = function(t, r, n) {
+bt.transitional = function(t, r, n) {
   function i(a, s) {
     return "[Axios v" + tn + "] Transitional option '" + a + "'" + s + (n ? ". " + n : "");
   }
@@ -3181,7 +3181,7 @@ pt.transitional = function(t, r, n) {
     )), t ? t(a, s, d) : !0;
   };
 };
-pt.spelling = function(t) {
+bt.spelling = function(t) {
   return (r, n) => (console.warn(`${n} is likely a misspelling of ${t}`), !0);
 };
 function ro(e, t, r) {
@@ -3201,10 +3201,10 @@ function ro(e, t, r) {
       throw new F("Unknown option " + a, F.ERR_BAD_OPTION);
   }
 }
-const tt = {
+const rt = {
   assertOptions: ro,
-  validators: pt
-}, ee = tt.validators;
+  validators: bt
+}, ee = rt.validators;
 let we = class {
   constructor(t) {
     this.defaults = t || {}, this.interceptors = {
@@ -3240,16 +3240,16 @@ let we = class {
   _request(t, r) {
     typeof t == "string" ? (r = r || {}, r.url = t) : r = t || {}, r = me(this.defaults, r);
     const { transitional: n, paramsSerializer: i, headers: a } = r;
-    n !== void 0 && tt.assertOptions(n, {
+    n !== void 0 && rt.assertOptions(n, {
       silentJSONParsing: ee.transitional(ee.boolean),
       forcedJSONParsing: ee.transitional(ee.boolean),
       clarifyTimeoutError: ee.transitional(ee.boolean)
     }, !1), i != null && (h.isFunction(i) ? r.paramsSerializer = {
       serialize: i
-    } : tt.assertOptions(i, {
+    } : rt.assertOptions(i, {
       encode: ee.function,
       serialize: ee.function
-    }, !0)), r.allowAbsoluteUrls !== void 0 || (this.defaults.allowAbsoluteUrls !== void 0 ? r.allowAbsoluteUrls = this.defaults.allowAbsoluteUrls : r.allowAbsoluteUrls = !0), tt.assertOptions(r, {
+    }, !0)), r.allowAbsoluteUrls !== void 0 || (this.defaults.allowAbsoluteUrls !== void 0 ? r.allowAbsoluteUrls = this.defaults.allowAbsoluteUrls : r.allowAbsoluteUrls = !0), rt.assertOptions(r, {
       baseUrl: ee.spelling("baseURL"),
       withXsrfToken: ee.spelling("withXSRFToken")
     }, !0), r.method = (r.method || this.defaults.method || "get").toLowerCase();
@@ -3490,7 +3490,7 @@ D.CanceledError = ke;
 D.CancelToken = no;
 D.isCancel = Kr;
 D.VERSION = tn;
-D.toFormData = dt;
+D.toFormData = ht;
 D.AxiosError = F;
 D.Cancel = D.CanceledError;
 D.all = function(t) {
@@ -3546,7 +3546,7 @@ function qe(e) {
   }
   return "";
 }
-function Tt(e, t, r = {}) {
+function Ze(e, t, r = {}) {
   r = {
     path: "/",
     ...r
@@ -3588,7 +3588,7 @@ const kr = async (e) => {
   const r = ae(navigator.userAgent);
   t.os = r.os.name, t.useragent = navigator.userAgent, t.fingerprint = await bn(), t.bl_fingerprint = await wn(), t.lang = navigator.language, t.ip = await so(), t.st = qe("__bbst"), t.ts = qe("__bbts"), console.log(t), await Cn();
   const n = await uo(t, e);
-  n && n.status === !0 && n.__bbst && n.__bbts && (Tt("__bbst", n.__bbst, { "Max-Age": 240, Secure: !0 }), Tt("__bbts", n.__bbts, { "Max-Age": 240, Secure: !0 })), n && n.status === "forbidden" && Tt("__bb_decision", "1", { "Max-Age": 640, Secure: !0 });
+  n && n.status === !0 && n.__bbst && n.__bbts && (Ze("__bbst", n.__bbst, { "Max-Age": 240, Secure: !0 }), Ze("__bbts", n.__bbts, { "Max-Age": 240, Secure: !0 }), Ze("__bbjwt", n.__bbts, { "Max-Age": 240, Secure: !0 })), n && n.status === "forbidden" && Ze("__bb_decision", "1", { "Max-Age": 640, Secure: !0 });
 };
 async function fo(e) {
   return new Promise((t) => setTimeout(t, e));
