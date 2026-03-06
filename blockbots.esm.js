@@ -3588,7 +3588,7 @@ const kr = async (e) => {
   const r = ae(navigator.userAgent);
   t.os = r.os.name, t.useragent = navigator.userAgent, t.fingerprint = await bn(), t.bl_fingerprint = await wn(), t.lang = navigator.language, t.ip = await so(), t.st = qe("__bbst"), t.ts = qe("__bbts"), console.log(t), await Cn();
   const n = await uo(t, e);
-  n && n.status === !0 && n.__bbst && n.__bbts && (Ze("__bbst", n.__bbst, { "Max-Age": 240, Secure: !0 }), Ze("__bbts", n.__bbts, { "Max-Age": 240, Secure: !0 }), Ze("__bbjwt", n.__bbts, { "Max-Age": 240, Secure: !0 })), n && n.status === "forbidden" && Ze("__bb_decision", "1", { "Max-Age": 640, Secure: !0 });
+  n && n.status === !0 && n.__bbst && n.__bbts && (Ze("__bbst", n.__bbst, { "Max-Age": 240, Secure: !0 }), Ze("__bbts", n.__bbts, { "Max-Age": 240, Secure: !0 }), Ze("__bbjwt", n.__bbjwt, { "Max-Age": 240, Secure: !0 })), n && n.status === "forbidden" && Ze("__bb_decision", "1", { "Max-Age": 640, Secure: !0 });
 };
 async function fo(e) {
   return new Promise((t) => setTimeout(t, e));
