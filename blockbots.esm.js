@@ -1,5 +1,5 @@
 (function(){"use strict";try{if(typeof document<"u"){var e=document.createElement("style");e.appendChild(document.createTextNode('button{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji"}body.theme-dark{background-color:#222;color:#d9d9d9}body.theme-dark a{color:#fff}body.theme-dark a:hover{text-decoration:underline;color:#ee730a}body.theme-dark .lds-ring div{border-color:#999 rgba(0,0,0,0) rgba(0,0,0,0)}body.theme-dark .font-red{color:#b20f03}body.theme-dark .ctp-button{background-color:#4693ff;color:#1d1d1d}body.theme-dark #challenge-success-text{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI2IDI2Ij48cGF0aCBmaWxsPSIjZDlkOWQ5IiBkPSJNMTMgMGExMyAxMyAwIDEgMCAwIDI2IDEzIDEzIDAgMCAwIDAtMjZtMCAyNGExMSAxMSAwIDEgMSAwLTIyIDExIDExIDAgMCAxIDAgMjIiLz48cGF0aCBmaWxsPSIjZDlkOWQ5IiBkPSJtMTAuOTU1IDE2LjA1NS0zLjk1LTQuMTI1LTEuNDQ1IDEuMzg1IDUuMzcgNS42MSA5LjQ5NS05LjYtMS40Mi0xLjQwNXoiLz48L3N2Zz4)}body.theme-dark #challenge-error-text{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+)}body.theme-light{background-color:#fff;color:#313131}body.theme-light a{color:#0051c3}body.theme-light a:hover{text-decoration:underline;color:#ee730a}body.theme-light .lds-ring div{border-color:#595959 rgba(0,0,0,0) rgba(0,0,0,0)}body.theme-light .font-red{color:#fc574a}body.theme-light .ctp-button{border-color:#003681;background-color:#003681;color:#fff}body.theme-light #challenge-success-text{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI2IDI2Ij48cGF0aCBmaWxsPSIjMzEzMTMxIiBkPSJNMTMgMGExMyAxMyAwIDEgMCAwIDI2IDEzIDEzIDAgMCAwIDAtMjZtMCAyNGExMSAxMSAwIDEgMSAwLTIyIDExIDExIDAgMCAxIDAgMjIiLz48cGF0aCBmaWxsPSIjMzEzMTMxIiBkPSJtMTAuOTU1IDE2LjA1NS0zLjk1LTQuMTI1LTEuNDQ1IDEuMzg1IDUuMzcgNS42MSA5LjQ5NS05LjYtMS40Mi0xLjQwNXoiLz48L3N2Zz4=)}body.theme-light #challenge-error-text{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI2ZjNTc0YSIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjZmM1NzRhIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+)}a{transition:color .15s ease;background-color:#0000;text-decoration:none;color:#0051c3}a:hover{text-decoration:underline;color:#ee730a}.main-content{margin:8rem auto;padding-right:1.5rem;padding-left:1.5rem;width:100%;max-width:60rem}.main-content .loading-verifying{height:76.391px}.spacer{margin:2rem 0}.spacer-top{margin-top:4rem}.spacer-bottom{margin-bottom:2rem}.heading-favicon{margin-right:.5rem;width:2rem;height:2rem}@media(max-width:720px){.main-content{margin-top:4rem}.heading-favicon{width:1.5rem;height:1.5rem}}.main-wrapper{display:flex;flex:1;flex-direction:column;align-items:center}.font-red{color:#b20f03}.h1{line-height:3.75rem;font-size:2.5rem;font-weight:500}.core-msg{line-height:2.25rem;font-size:1.5rem;font-weight:400}.body-text{line-height:1.25rem;font-size:1rem;font-weight:400}@media(max-width:720px){.h1{line-height:1.75rem;font-size:1.5rem}.h2{line-height:1.5rem;font-size:1.25rem}.core-msg{line-height:1.5rem;font-size:1rem}}#challenge-error-text{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI2ZjNTc0YSIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjZmM1NzRhIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+);background-repeat:no-repeat;background-size:contain;padding-left:34px}#challenge-success-text{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI2IDI2Ij48cGF0aCBmaWxsPSIjMzEzMTMxIiBkPSJNMTMgMGExMyAxMyAwIDEgMCAwIDI2IDEzIDEzIDAgMCAwIDAtMjZtMCAyNGExMSAxMSAwIDEgMSAwLTIyIDExIDExIDAgMCAxIDAgMjIiLz48cGF0aCBmaWxsPSIjMzEzMTMxIiBkPSJtMTAuOTU1IDE2LjA1NS0zLjk1LTQuMTI1LTEuNDQ1IDEuMzg1IDUuMzcgNS42MSA5LjQ5NS05LjYtMS40Mi0xLjQwNXoiLz48L3N2Zz4=);background-repeat:no-repeat;background-size:contain;padding-left:42px}.text-center{text-align:center}.ctp-button{transition-duration:.2s;transition-property:background-color,border-color,color;transition-timing-function:ease;margin:2rem 0;border:.063rem solid #0051c3;border-radius:.313rem;background-color:#0051c3;cursor:pointer;padding:.375rem 1rem;line-height:1.313rem;color:#fff;font-size:.875rem}.ctp-button:hover{border-color:#003681;background-color:#003681;cursor:pointer;color:#fff}.footer{margin:0 auto;padding-right:1.5rem;padding-left:1.5rem;width:100%;max-width:60rem;line-height:1.125rem;font-size:.75rem}.footer-inner{border-top:1px solid #d9d9d9;padding-top:1rem;padding-bottom:1rem}.clearfix:after{display:table;clear:both;content:""}.clearfix .column{float:left;padding-right:1.5rem;width:50%}.diagnostic-wrapper{margin-bottom:.5rem}.footer .ray-id{text-align:center}.footer .ray-id code{font-family:monaco,courier,monospace}.core-msg,.zone-name-title{overflow-wrap:break-word}@media(max-width:720px){.diagnostic-wrapper{display:flex;flex-wrap:wrap;justify-content:center}.clearfix:after{display:initial;clear:none;text-align:center;content:none}.column{padding-bottom:2rem}.clearfix .column{float:none;padding:0;width:auto;word-break:keep-all}.zone-name-title{margin-bottom:1rem}}.loading-verifying{height:76.391px}.lds-ring{display:inline-block;position:relative;width:1.875rem;height:1.875rem}.lds-ring div{box-sizing:border-box;display:block;position:absolute;border:.3rem solid #595959;border-radius:50%;border-color:#313131 rgba(0,0,0,0) rgba(0,0,0,0);width:1.875rem;height:1.875rem;animation:lds-ring 1.2s cubic-bezier(.5,0,.5,1) infinite}.lds-ring div:nth-child(1){animation-delay:-.45s}.lds-ring div:nth-child(2){animation-delay:-.3s}.lds-ring div:nth-child(3){animation-delay:-.15s}@keyframes lds-ring{0%{transform:rotate(0)}to{transform:rotate(360deg)}}.rtl .heading-favicon{margin-right:0;margin-left:.5rem}.rtl #challenge-success-text{background-position:right;padding-right:42px;padding-left:0}.rtl #challenge-error-text{background-position:right;padding-right:34px;padding-left:0}.challenge-content .loading-verifying{height:76.391px}@media(prefers-color-scheme:dark){body{background-color:#222;color:#d9d9d9}body a{color:#fff}body a:hover{text-decoration:underline;color:#ee730a}body .lds-ring div{border-color:#999 rgba(0,0,0,0) rgba(0,0,0,0)}body .font-red{color:#b20f03}body .ctp-button{background-color:#4693ff;color:#1d1d1d}body #challenge-success-text{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI2IDI2Ij48cGF0aCBmaWxsPSIjZDlkOWQ5IiBkPSJNMTMgMGExMyAxMyAwIDEgMCAwIDI2IDEzIDEzIDAgMCAwIDAtMjZtMCAyNGExMSAxMSAwIDEgMSAwLTIyIDExIDExIDAgMCAxIDAgMjIiLz48cGF0aCBmaWxsPSIjZDlkOWQ5IiBkPSJtMTAuOTU1IDE2LjA1NS0zLjk1LTQuMTI1LTEuNDQ1IDEuMzg1IDUuMzcgNS42MSA5LjQ5NS05LjYtMS40Mi0xLjQwNXoiLz48L3N2Zz4)}body #challenge-error-text{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+)}}*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media(max-width:720px){.main-content{margin-top:4rem}}.h2{line-height:2.25rem;font-size:1.5rem;font-weight:500}@media(max-width:720px){.h2{line-height:1.5rem;font-size:1.25rem}}#challenge-error-text{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+);background-repeat:no-repeat;background-size:contain;padding-left:34px}@media(prefers-color-scheme:dark){body{background-color:#222;color:#d9d9d9}}')),document.head.appendChild(e)}}catch(i){console.error("vite-plugin-css-injected-by-js",i)}})();
-function on() {
+function an() {
   const e = {
     verified: [],
     blocked: [],
@@ -19,7 +19,7 @@ function on() {
     }
   };
 }
-function sn(e, t = 0) {
+function cn(e, t = 0) {
   t = t || 0;
   let r = 3735928559 ^ t, n = 1103547991 ^ t;
   for (let i = 0; i < e.length; i++) {
@@ -28,8 +28,8 @@ function sn(e, t = 0) {
   }
   return r = Math.imul(r ^ r >>> 16, 2246822507) ^ Math.imul(n ^ n >>> 13, 3266489909), n = Math.imul(n ^ n >>> 16, 2246822507) ^ Math.imul(r ^ r >>> 13, 3266489909), 4294967296 * (2097151 & n) + (r >>> 0);
 }
-var an = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : typeof global < "u" ? global : typeof self < "u" ? self : {};
-function cn(e) {
+var ln = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : typeof global < "u" ? global : typeof self < "u" ? self : {};
+function un(e) {
   if (Object.prototype.hasOwnProperty.call(e, "__esModule")) return e;
   var t = e.default;
   if (typeof t == "function") {
@@ -54,18 +54,18 @@ function cn(e) {
   }), r;
 }
 var wt = { exports: {} };
-const ln = {}, un = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const fn = {}, dn = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: ln
-}, Symbol.toStringTag, { value: "Module" })), Yt = /* @__PURE__ */ cn(un);
+  default: fn
+}, Symbol.toStringTag, { value: "Module" })), Yt = /* @__PURE__ */ un(dn);
 var Zt;
-function fn() {
+function hn() {
   return Zt || (Zt = 1, (function(e) {
     (function() {
       var t = "input is invalid type", r = "finalize already called", n = typeof window == "object", i = n ? window : {};
       i.JS_MD5_NO_WINDOW && (n = !1);
       var a = !n && typeof self == "object", s = !i.JS_MD5_NO_NODE_JS && typeof process == "object" && process.versions && process.versions.node;
-      s ? i = an : a && (i = self);
+      s ? i = ln : a && (i = self);
       var d = !i.JS_MD5_NO_COMMON_JS && !0 && e.exports, p = !i.JS_MD5_NO_ARRAY_BUFFER && typeof ArrayBuffer < "u", f = "0123456789abcdef".split(""), x = [128, 32768, 8388608, -2147483648], A = [0, 8, 16, 24], _ = ["hex", "array", "digest", "buffer", "arrayBuffer", "base64"], P = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/".split(""), R = [], k;
       if (p) {
         var S = new ArrayBuffer(68);
@@ -239,11 +239,11 @@ function fn() {
     })();
   })(wt)), wt.exports;
 }
-var dn = fn();
+var pn = hn();
 const Cr = () => {
   const e = document.createElement("canvas");
   return !!(e.getContext && e.getContext("2d"));
-}, hn = () => {
+}, bn = () => {
   if (!Cr()) return "None";
   const e = document.createElement("canvas"), t = e.getContext("2d"), r = "BlockBots,org <canvas>";
   e.setAttribute("width", 220), e.setAttribute("height", 30);
@@ -255,8 +255,8 @@ const Cr = () => {
   let n = e.toDataURL().split(",")[1], i = atob(n), a = new Uint8Array(i.length);
   for (let s = 0; s < i.length; s++)
     a[s] = i.charCodeAt(s);
-  return sn(a).toString();
-}, pn = () => {
+  return cn(a).toString();
+}, wn = () => {
   if (!Cr()) return "None";
   const e = document.createElement("canvas"), t = e.getContext("2d"), r = "BrowserLeaks,com <canvas> 1.0";
   e.setAttribute("width", 220), e.setAttribute("height", 30);
@@ -268,13 +268,13 @@ const Cr = () => {
   let n = e.toDataURL().split(",")[1], i = atob(n), a = new Uint8Array(i.length);
   for (let s = 0; s < i.length; s++)
     a[s] = i.charCodeAt(s);
-  return dn.md5(a);
-}, bn = () => new Promise((e, t) => {
-  e(hn());
-}), wn = () => new Promise((e, t) => {
-  e(pn());
+  return pn.md5(a);
+}, mn = () => new Promise((e, t) => {
+  e(bn());
+}), yn = () => new Promise((e, t) => {
+  e(wn());
 });
-var mn = "2.0.4", Ft = 500, Qt = "user-agent", Ae = "", er = "?", nt = "function", fe = "undefined", Re = "object", Pt = "string", z = "browser", ie = "cpu", ne = "device", X = "engine", G = "os", Ee = "result", y = "name", b = "type", m = "vendor", g = "version", V = "architecture", He = "major", w = "model", De = "console", T = "mobile", N = "tablet", I = "smarttv", te = "wearable", Ke = "xr", Ie = "embedded", Te = "inapp", zt = "brands", pe = "formFactors", Vt = "fullVersionList", ve = "platform", $t = "platformVersion", ct = "bitness", de = "sec-ch-ua", yn = de + "-full-version-list", gn = de + "-arch", xn = de + "-" + ct, En = de + "-form-factors", vn = de + "-" + T, An = de + "-" + w, Tr = de + "-" + ve, Rn = Tr + "-version", Fr = [zt, Vt, T, w, ve, $t, V, pe, ct], Ge = "Amazon", ge = "Apple", tr = "ASUS", rr = "BlackBerry", he = "Google", nr = "Huawei", mt = "Lenovo", ir = "Honor", Xe = "LG", yt = "Microsoft", gt = "Motorola", xt = "Nvidia", or = "OnePlus", Et = "OPPO", Fe = "Samsung", sr = "Sharp", Pe = "Sony", vt = "Xiaomi", At = "Zebra", ar = "Chrome", cr = "Chromium", ce = "Chromecast", Qe = "Edge", Be = "Firefox", Ue = "Opera", Rt = "Facebook", lr = "Sogou", xe = "Mobile ", Ne = " Browser", Bt = "Windows", Sn = typeof window !== fe, $ = Sn && window.navigator ? window.navigator : void 0, ue = $ && $.userAgentData ? $.userAgentData : void 0, On = function(e, t) {
+var gn = "2.0.4", Ft = 500, Qt = "user-agent", Ae = "", er = "?", nt = "function", fe = "undefined", Re = "object", Pt = "string", z = "browser", ie = "cpu", ne = "device", X = "engine", G = "os", Ee = "result", y = "name", b = "type", m = "vendor", g = "version", V = "architecture", He = "major", w = "model", De = "console", T = "mobile", N = "tablet", I = "smarttv", te = "wearable", Ke = "xr", Ie = "embedded", Te = "inapp", zt = "brands", pe = "formFactors", Vt = "fullVersionList", ve = "platform", $t = "platformVersion", ct = "bitness", de = "sec-ch-ua", xn = de + "-full-version-list", En = de + "-arch", vn = de + "-" + ct, An = de + "-form-factors", Rn = de + "-" + T, Sn = de + "-" + w, Tr = de + "-" + ve, On = Tr + "-version", Fr = [zt, Vt, T, w, ve, $t, V, pe, ct], Ge = "Amazon", ge = "Apple", tr = "ASUS", rr = "BlackBerry", he = "Google", nr = "Huawei", mt = "Lenovo", ir = "Honor", Xe = "LG", yt = "Microsoft", gt = "Motorola", xt = "Nvidia", or = "OnePlus", Et = "OPPO", Fe = "Samsung", sr = "Sharp", Pe = "Sony", vt = "Xiaomi", At = "Zebra", ar = "Chrome", cr = "Chromium", ce = "Chromecast", Qe = "Edge", Be = "Firefox", Ue = "Opera", Rt = "Facebook", lr = "Sogou", xe = "Mobile ", Ne = " Browser", Bt = "Windows", _n = typeof window !== fe, $ = _n && window.navigator ? window.navigator : void 0, ue = $ && $.userAgentData ? $.userAgentData : void 0, kn = function(e, t) {
   var r = {}, n = t;
   if (!it(t)) {
     n = {};
@@ -368,7 +368,7 @@ var mn = "2.0.4", Ft = 500, Qt = "user-agent", Ae = "", er = "?", nt = "function
   xr: ["VR", "XR"],
   "?": ["Desktop", "Unknown"],
   "*": void 0
-}, _n = {
+}, Cn = {
   Chrome: "Google Chrome",
   Edge: "Microsoft Edge",
   "Edge WebView2": "Microsoft Edge WebView2",
@@ -1613,7 +1613,7 @@ var mn = "2.0.4", Ft = 500, Qt = "user-agent", Ae = "", er = "?", nt = "function
     [X, [y, g]],
     [G, [y, g]]
   ]), e;
-})(), kn = function(e, t) {
+})(), Tn = function(e, t) {
   var r = Ye.init[t], n = Ye.isIgnore[t] || 0, i = Ye.isIgnoreRgx[t] || 0, a = Ye.toString[t] || 0;
   function s() {
     se.call(this, r);
@@ -1658,14 +1658,14 @@ function Pr(e, t) {
   if (e = e || {}, se.call(this, Fr), t)
     se.call(this, [
       [zt, St(e[de])],
-      [Vt, St(e[yn])],
-      [T, /\?1/.test(e[vn])],
-      [w, Le(e[An])],
+      [Vt, St(e[xn])],
+      [T, /\?1/.test(e[Rn])],
+      [w, Le(e[Sn])],
       [ve, Le(e[Tr])],
-      [$t, Le(e[Rn])],
-      [V, Le(e[gn])],
-      [pe, St(e[En])],
-      [ct, Le(e[xn])]
+      [$t, Le(e[On])],
+      [V, Le(e[En])],
+      [pe, St(e[An])],
+      [ct, Le(e[vn])]
     ]);
   else
     for (var r in e)
@@ -1708,7 +1708,7 @@ function hr(e, t, r, n) {
         if (s)
           for (var p in s) {
             var f = s[p].brand || s[p], x = s[p].version;
-            this.itemType == z && !/not.a.brand/i.test(f) && (!d || /Chrom/.test(d) && f != cr || d == Qe && /WebView2/.test(f)) && (f = re(f, _n), d = this.get(y), d && !/Chrom/.test(d) && /Chrom/.test(f) || this.set(y, f).set(g, x).set(He, Ot(x)), d = f), this.itemType == X && f == cr && this.set(g, x);
+            this.itemType == z && !/not.a.brand/i.test(f) && (!d || /Chrom/.test(d) && f != cr || d == Qe && /WebView2/.test(f)) && (f = re(f, Cn), d = this.get(y), d && !/Chrom/.test(d) && /Chrom/.test(f) || this.set(y, f).set(g, x).set(He, Ot(x)), d = f), this.itemType == X && f == cr && this.set(g, x);
           }
         break;
       case ie:
@@ -1750,7 +1750,7 @@ function hr(e, t, r, n) {
     ["ua", t],
     ["uaCH", n],
     ["rgxMap", r],
-    ["data", kn(this, e)]
+    ["data", Tn(this, e)]
   ]), this;
 }
 function ae(e, t, r) {
@@ -1771,7 +1771,7 @@ function ae(e, t, r) {
         Ae
       )
     )
-  ), a = new Pr(r, !0), s = t ? On(dr, t) : dr, d = function(p) {
+  ), a = new Pr(r, !0), s = t ? kn(dr, t) : dr, d = function(p) {
     return p == Ee ? function() {
       return new hr(p, i, s, a).set("ua", i).set(z, this.getBrowser()).set(ie, this.getCPU()).set(ne, this.getDevice()).set(X, this.getEngine()).set(G, this.getOS()).get();
     } : function() {
@@ -1793,13 +1793,13 @@ function ae(e, t, r) {
     }]
   ]).setUA(i), this;
 }
-ae.VERSION = mn;
+ae.VERSION = gn;
 ae.BROWSER = lt([y, g, He, b]);
 ae.CPU = lt([V]);
 ae.DEVICE = lt([w, m, b, De, T, I, N, te, Ie]);
 ae.ENGINE = ae.OS = lt([y, g]);
 let pr = !1;
-const Cn = () => pr ? Promise.resolve(!0) : new Promise((e) => {
+const Fn = () => pr ? Promise.resolve(!0) : new Promise((e) => {
   const t = document.createElement("iframe");
   t.src = "https://watcher.blockbots.org:8888/", t.style.display = "none", t.onload = () => {
     pr = !0, e(!0);
@@ -1810,24 +1810,24 @@ function Br(e, t) {
     return e.apply(t, arguments);
   };
 }
-const { toString: Tn } = Object.prototype, { getPrototypeOf: Wt } = Object, { iterator: ut, toStringTag: Ur } = Symbol, ft = /* @__PURE__ */ ((e) => (t) => {
-  const r = Tn.call(t);
+const { toString: Pn } = Object.prototype, { getPrototypeOf: Wt } = Object, { iterator: ut, toStringTag: Ur } = Symbol, ft = /* @__PURE__ */ ((e) => (t) => {
+  const r = Pn.call(t);
   return e[r] || (e[r] = r.slice(8, -1).toLowerCase());
 })(/* @__PURE__ */ Object.create(null)), Y = (e) => (e = e.toLowerCase(), (t) => ft(t) === e), dt = (e) => (t) => typeof t === e, { isArray: _e } = Array, je = dt("undefined");
 function ze(e) {
   return e !== null && !je(e) && e.constructor !== null && !je(e.constructor) && W(e.constructor.isBuffer) && e.constructor.isBuffer(e);
 }
 const Nr = Y("ArrayBuffer");
-function Fn(e) {
+function Bn(e) {
   let t;
   return typeof ArrayBuffer < "u" && ArrayBuffer.isView ? t = ArrayBuffer.isView(e) : t = e && e.buffer && Nr(e.buffer), t;
 }
-const Pn = dt("string"), W = dt("function"), Lr = dt("number"), Ve = (e) => e !== null && typeof e == "object", Bn = (e) => e === !0 || e === !1, et = (e) => {
+const Un = dt("string"), W = dt("function"), Lr = dt("number"), Ve = (e) => e !== null && typeof e == "object", Nn = (e) => e === !0 || e === !1, et = (e) => {
   if (ft(e) !== "object")
     return !1;
   const t = Wt(e);
   return (t === null || t === Object.prototype || Object.getPrototypeOf(t) === null) && !(Ur in e) && !(ut in e);
-}, Un = (e) => {
+}, Ln = (e) => {
   if (!Ve(e) || ze(e))
     return !1;
   try {
@@ -1835,11 +1835,11 @@ const Pn = dt("string"), W = dt("function"), Lr = dt("number"), Ve = (e) => e !=
   } catch {
     return !1;
   }
-}, Nn = Y("Date"), Ln = Y("File"), Mn = Y("Blob"), Dn = Y("FileList"), In = (e) => Ve(e) && W(e.pipe), Hn = (e) => {
+}, Mn = Y("Date"), Dn = Y("File"), In = Y("Blob"), Hn = Y("FileList"), jn = (e) => Ve(e) && W(e.pipe), qn = (e) => {
   let t;
   return e && (typeof FormData == "function" && e instanceof FormData || W(e.append) && ((t = ft(e)) === "formdata" || // detect form-data instance
   t === "object" && W(e.toString) && e.toString() === "[object FormData]"));
-}, jn = Y("URLSearchParams"), [qn, zn, Vn, $n] = ["ReadableStream", "Request", "Response", "Headers"].map(Y), Wn = (e) => e.trim ? e.trim() : e.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, "");
+}, zn = Y("URLSearchParams"), [Vn, $n, Wn, Jn] = ["ReadableStream", "Request", "Response", "Headers"].map(Y), Kn = (e) => e.trim ? e.trim() : e.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, "");
 function $e(e, t, { allOwnKeys: r = !1 } = {}) {
   if (e === null || typeof e > "u")
     return;
@@ -1877,13 +1877,13 @@ function Nt() {
     arguments[n] && $e(arguments[n], r);
   return t;
 }
-const Jn = (e, t, r, { allOwnKeys: n } = {}) => ($e(t, (i, a) => {
+const Gn = (e, t, r, { allOwnKeys: n } = {}) => ($e(t, (i, a) => {
   r && W(i) ? e[a] = Br(i, r) : e[a] = i;
-}, { allOwnKeys: n }), e), Kn = (e) => (e.charCodeAt(0) === 65279 && (e = e.slice(1)), e), Gn = (e, t, r, n) => {
+}, { allOwnKeys: n }), e), Xn = (e) => (e.charCodeAt(0) === 65279 && (e = e.slice(1)), e), Yn = (e, t, r, n) => {
   e.prototype = Object.create(t.prototype, n), e.prototype.constructor = e, Object.defineProperty(e, "super", {
     value: t.prototype
   }), r && Object.assign(e.prototype, r);
-}, Xn = (e, t, r, n) => {
+}, Zn = (e, t, r, n) => {
   let i, a, s;
   const d = {};
   if (t = t || {}, e == null) return t;
@@ -1893,11 +1893,11 @@ const Jn = (e, t, r, { allOwnKeys: n } = {}) => ($e(t, (i, a) => {
     e = r !== !1 && Wt(e);
   } while (e && (!r || r(e, t)) && e !== Object.prototype);
   return t;
-}, Yn = (e, t, r) => {
+}, Qn = (e, t, r) => {
   e = String(e), (r === void 0 || r > e.length) && (r = e.length), r -= t.length;
   const n = e.indexOf(t, r);
   return n !== -1 && n === r;
-}, Zn = (e) => {
+}, ei = (e) => {
   if (!e) return null;
   if (_e(e)) return e;
   let t = e.length;
@@ -1906,31 +1906,31 @@ const Jn = (e, t, r, { allOwnKeys: n } = {}) => ($e(t, (i, a) => {
   for (; t-- > 0; )
     r[t] = e[t];
   return r;
-}, Qn = /* @__PURE__ */ ((e) => (t) => e && t instanceof e)(typeof Uint8Array < "u" && Wt(Uint8Array)), ei = (e, t) => {
+}, ti = /* @__PURE__ */ ((e) => (t) => e && t instanceof e)(typeof Uint8Array < "u" && Wt(Uint8Array)), ri = (e, t) => {
   const n = (e && e[ut]).call(e);
   let i;
   for (; (i = n.next()) && !i.done; ) {
     const a = i.value;
     t.call(e, a[0], a[1]);
   }
-}, ti = (e, t) => {
+}, ni = (e, t) => {
   let r;
   const n = [];
   for (; (r = e.exec(t)) !== null; )
     n.push(r);
   return n;
-}, ri = Y("HTMLFormElement"), ni = (e) => e.toLowerCase().replace(
+}, ii = Y("HTMLFormElement"), oi = (e) => e.toLowerCase().replace(
   /[-_\s]([a-z\d])(\w*)/g,
   function(r, n, i) {
     return n.toUpperCase() + i;
   }
-), br = (({ hasOwnProperty: e }) => (t, r) => e.call(t, r))(Object.prototype), ii = Y("RegExp"), Ir = (e, t) => {
+), br = (({ hasOwnProperty: e }) => (t, r) => e.call(t, r))(Object.prototype), si = Y("RegExp"), Ir = (e, t) => {
   const r = Object.getOwnPropertyDescriptors(e), n = {};
   $e(r, (i, a) => {
     let s;
     (s = t(i, a, e)) !== !1 && (n[a] = s || i);
   }), Object.defineProperties(e, n);
-}, oi = (e) => {
+}, ai = (e) => {
   Ir(e, (t, r) => {
     if (W(e) && ["arguments", "caller", "callee"].indexOf(r) !== -1)
       return !1;
@@ -1945,19 +1945,19 @@ const Jn = (e, t, r, { allOwnKeys: n } = {}) => ($e(t, (i, a) => {
       });
     }
   });
-}, si = (e, t) => {
+}, ci = (e, t) => {
   const r = {}, n = (i) => {
     i.forEach((a) => {
       r[a] = !0;
     });
   };
   return _e(e) ? n(e) : n(String(e).split(t)), r;
-}, ai = () => {
-}, ci = (e, t) => e != null && Number.isFinite(e = +e) ? e : t;
-function li(e) {
+}, li = () => {
+}, ui = (e, t) => e != null && Number.isFinite(e = +e) ? e : t;
+function fi(e) {
   return !!(e && W(e.append) && e[Ur] === "FormData" && e[ut]);
 }
-const ui = (e) => {
+const di = (e) => {
   const t = new Array(10), r = (n, i) => {
     if (Ve(n)) {
       if (t.indexOf(n) >= 0)
@@ -1976,72 +1976,72 @@ const ui = (e) => {
     return n;
   };
   return r(e, 0);
-}, fi = Y("AsyncFunction"), di = (e) => e && (Ve(e) || W(e)) && W(e.then) && W(e.catch), Hr = ((e, t) => e ? setImmediate : t ? ((r, n) => (be.addEventListener("message", ({ source: i, data: a }) => {
+}, hi = Y("AsyncFunction"), pi = (e) => e && (Ve(e) || W(e)) && W(e.then) && W(e.catch), Hr = ((e, t) => e ? setImmediate : t ? ((r, n) => (be.addEventListener("message", ({ source: i, data: a }) => {
   i === be && a === r && n.length && n.shift()();
 }, !1), (i) => {
   n.push(i), be.postMessage(r, "*");
 }))(`axios@${Math.random()}`, []) : (r) => setTimeout(r))(
   typeof setImmediate == "function",
   W(be.postMessage)
-), hi = typeof queueMicrotask < "u" ? queueMicrotask.bind(be) : typeof process < "u" && process.nextTick || Hr, pi = (e) => e != null && W(e[ut]), h = {
+), bi = typeof queueMicrotask < "u" ? queueMicrotask.bind(be) : typeof process < "u" && process.nextTick || Hr, wi = (e) => e != null && W(e[ut]), h = {
   isArray: _e,
   isArrayBuffer: Nr,
   isBuffer: ze,
-  isFormData: Hn,
-  isArrayBufferView: Fn,
-  isString: Pn,
+  isFormData: qn,
+  isArrayBufferView: Bn,
+  isString: Un,
   isNumber: Lr,
-  isBoolean: Bn,
+  isBoolean: Nn,
   isObject: Ve,
   isPlainObject: et,
-  isEmptyObject: Un,
-  isReadableStream: qn,
-  isRequest: zn,
-  isResponse: Vn,
-  isHeaders: $n,
+  isEmptyObject: Ln,
+  isReadableStream: Vn,
+  isRequest: $n,
+  isResponse: Wn,
+  isHeaders: Jn,
   isUndefined: je,
-  isDate: Nn,
-  isFile: Ln,
-  isBlob: Mn,
-  isRegExp: ii,
+  isDate: Mn,
+  isFile: Dn,
+  isBlob: In,
+  isRegExp: si,
   isFunction: W,
-  isStream: In,
-  isURLSearchParams: jn,
-  isTypedArray: Qn,
-  isFileList: Dn,
+  isStream: jn,
+  isURLSearchParams: zn,
+  isTypedArray: ti,
+  isFileList: Hn,
   forEach: $e,
   merge: Nt,
-  extend: Jn,
-  trim: Wn,
-  stripBOM: Kn,
-  inherits: Gn,
-  toFlatObject: Xn,
+  extend: Gn,
+  trim: Kn,
+  stripBOM: Xn,
+  inherits: Yn,
+  toFlatObject: Zn,
   kindOf: ft,
   kindOfTest: Y,
-  endsWith: Yn,
-  toArray: Zn,
-  forEachEntry: ei,
-  matchAll: ti,
-  isHTMLForm: ri,
+  endsWith: Qn,
+  toArray: ei,
+  forEachEntry: ri,
+  matchAll: ni,
+  isHTMLForm: ii,
   hasOwnProperty: br,
   hasOwnProp: br,
   // an alias to avoid ESLint no-prototype-builtins detection
   reduceDescriptors: Ir,
-  freezeMethods: oi,
-  toObjectSet: si,
-  toCamelCase: ni,
-  noop: ai,
-  toFiniteNumber: ci,
+  freezeMethods: ai,
+  toObjectSet: ci,
+  toCamelCase: oi,
+  noop: li,
+  toFiniteNumber: ui,
   findKey: Mr,
   global: be,
   isContextDefined: Dr,
-  isSpecCompliantForm: li,
-  toJSONObject: ui,
-  isAsyncFn: fi,
-  isThenable: di,
+  isSpecCompliantForm: fi,
+  toJSONObject: di,
+  isAsyncFn: hi,
+  isThenable: pi,
   setImmediate: Hr,
-  asap: hi,
-  isIterable: pi
+  asap: bi,
+  isIterable: wi
 };
 function F(e, t, r, n, i) {
   Error.call(this), Error.captureStackTrace ? Error.captureStackTrace(this, this.constructor) : this.stack = new Error().stack, this.message = e, this.name = "AxiosError", t && (this.code = t), r && (this.config = r), n && (this.request = n), i && (this.response = i, this.status = i.status ? i.status : null);
@@ -2093,7 +2093,7 @@ F.from = (e, t, r, n, i, a) => {
     return p !== Error.prototype;
   }, (d) => d !== "isAxiosError"), F.call(s, e.message, t, r, n, i), s.cause = e, s.name = e.name, a && Object.assign(s, a), s;
 };
-const bi = null;
+const mi = null;
 function Lt(e) {
   return h.isPlainObject(e) || h.isArray(e);
 }
@@ -2105,10 +2105,10 @@ function wr(e, t, r) {
     return i = zr(i), !r && a ? "[" + i + "]" : i;
   }).join(r ? "." : "") : t;
 }
-function wi(e) {
+function yi(e) {
   return h.isArray(e) && !e.some(Lt);
 }
-const mi = h.toFlatObject(h, {}, null, function(t) {
+const gi = h.toFlatObject(h, {}, null, function(t) {
   return /^is[A-Z]/.test(t);
 });
 function ht(e, t, r) {
@@ -2139,7 +2139,7 @@ function ht(e, t, r) {
     if (R && !S && typeof R == "object") {
       if (h.endsWith(k, "{}"))
         k = n ? k : k.slice(0, -2), R = JSON.stringify(R);
-      else if (h.isArray(R) && wi(R) || (h.isFileList(R) || h.endsWith(k, "[]")) && (U = h.toArray(R)))
+      else if (h.isArray(R) && yi(R) || (h.isFileList(R) || h.endsWith(k, "[]")) && (U = h.toArray(R)))
         return k = zr(k), U.forEach(function(M, K) {
           !(h.isUndefined(M) || M === null) && t.append(
             // eslint-disable-next-line no-nested-ternary
@@ -2150,7 +2150,7 @@ function ht(e, t, r) {
     }
     return Lt(R) ? !0 : (t.append(wr(S, k, a), f(R)), !1);
   }
-  const A = [], _ = Object.assign(mi, {
+  const A = [], _ = Object.assign(gi, {
     defaultVisitor: x,
     convertValue: f,
     isVisitable: Lt
@@ -2203,13 +2203,13 @@ Vr.toString = function(t) {
     return r(i[0]) + "=" + r(i[1]);
   }, "").join("&");
 };
-function yi(e) {
+function xi(e) {
   return encodeURIComponent(e).replace(/%3A/gi, ":").replace(/%24/g, "$").replace(/%2C/gi, ",").replace(/%20/g, "+").replace(/%5B/gi, "[").replace(/%5D/gi, "]");
 }
 function $r(e, t, r) {
   if (!t)
     return e;
-  const n = r && r.encode || yi;
+  const n = r && r.encode || xi;
   h.isFunction(r) && (r = {
     serialize: r
   });
@@ -2279,27 +2279,27 @@ const Wr = {
   silentJSONParsing: !0,
   forcedJSONParsing: !0,
   clarifyTimeoutError: !1
-}, gi = typeof URLSearchParams < "u" ? URLSearchParams : Jt, xi = typeof FormData < "u" ? FormData : null, Ei = typeof Blob < "u" ? Blob : null, vi = {
+}, Ei = typeof URLSearchParams < "u" ? URLSearchParams : Jt, vi = typeof FormData < "u" ? FormData : null, Ai = typeof Blob < "u" ? Blob : null, Ri = {
   isBrowser: !0,
   classes: {
-    URLSearchParams: gi,
-    FormData: xi,
-    Blob: Ei
+    URLSearchParams: Ei,
+    FormData: vi,
+    Blob: Ai
   },
   protocols: ["http", "https", "file", "blob", "url", "data"]
-}, Kt = typeof window < "u" && typeof document < "u", Mt = typeof navigator == "object" && navigator || void 0, Ai = Kt && (!Mt || ["ReactNative", "NativeScript", "NS"].indexOf(Mt.product) < 0), Ri = typeof WorkerGlobalScope < "u" && // eslint-disable-next-line no-undef
-self instanceof WorkerGlobalScope && typeof self.importScripts == "function", Si = Kt && window.location.href || "http://localhost", Oi = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+}, Kt = typeof window < "u" && typeof document < "u", Mt = typeof navigator == "object" && navigator || void 0, Si = Kt && (!Mt || ["ReactNative", "NativeScript", "NS"].indexOf(Mt.product) < 0), Oi = typeof WorkerGlobalScope < "u" && // eslint-disable-next-line no-undef
+self instanceof WorkerGlobalScope && typeof self.importScripts == "function", _i = Kt && window.location.href || "http://localhost", ki = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   hasBrowserEnv: Kt,
-  hasStandardBrowserEnv: Ai,
-  hasStandardBrowserWebWorkerEnv: Ri,
+  hasStandardBrowserEnv: Si,
+  hasStandardBrowserWebWorkerEnv: Oi,
   navigator: Mt,
-  origin: Si
+  origin: _i
 }, Symbol.toStringTag, { value: "Module" })), j = {
-  ...Oi,
-  ...vi
+  ...ki,
+  ...Ri
 };
-function _i(e, t) {
+function Ci(e, t) {
   return ht(e, new j.classes.URLSearchParams(), {
     visitor: function(r, n, i, a) {
       return j.isNode && h.isBuffer(r) ? (this.append(n, r.toString("base64")), !1) : a.defaultVisitor.apply(this, arguments);
@@ -2307,10 +2307,10 @@ function _i(e, t) {
     ...t
   });
 }
-function ki(e) {
+function Ti(e) {
   return h.matchAll(/\w+|\[(\w*)]/g, e).map((t) => t[0] === "[]" ? "" : t[1] || t[0]);
 }
-function Ci(e) {
+function Fi(e) {
   const t = {}, r = Object.keys(e);
   let n;
   const i = r.length;
@@ -2324,17 +2324,17 @@ function Jr(e) {
     let s = r[a++];
     if (s === "__proto__") return !0;
     const d = Number.isFinite(+s), p = a >= r.length;
-    return s = !s && h.isArray(i) ? i.length : s, p ? (h.hasOwnProp(i, s) ? i[s] = [i[s], n] : i[s] = n, !d) : ((!i[s] || !h.isObject(i[s])) && (i[s] = []), t(r, n, i[s], a) && h.isArray(i[s]) && (i[s] = Ci(i[s])), !d);
+    return s = !s && h.isArray(i) ? i.length : s, p ? (h.hasOwnProp(i, s) ? i[s] = [i[s], n] : i[s] = n, !d) : ((!i[s] || !h.isObject(i[s])) && (i[s] = []), t(r, n, i[s], a) && h.isArray(i[s]) && (i[s] = Fi(i[s])), !d);
   }
   if (h.isFormData(e) && h.isFunction(e.entries)) {
     const r = {};
     return h.forEachEntry(e, (n, i) => {
-      t(ki(n), i, r, 0);
+      t(Ti(n), i, r, 0);
     }), r;
   }
   return null;
 }
-function Ti(e, t, r) {
+function Pi(e, t, r) {
   if (h.isString(e))
     try {
       return (t || JSON.parse)(e), h.trim(e);
@@ -2360,7 +2360,7 @@ const We = {
     let d;
     if (a) {
       if (n.indexOf("application/x-www-form-urlencoded") > -1)
-        return _i(t, this.formSerializer).toString();
+        return Ci(t, this.formSerializer).toString();
       if ((d = h.isFileList(t)) || n.indexOf("multipart/form-data") > -1) {
         const p = this.env && this.env.FormData;
         return ht(
@@ -2370,7 +2370,7 @@ const We = {
         );
       }
     }
-    return a || i ? (r.setContentType("application/json", !1), Ti(t)) : t;
+    return a || i ? (r.setContentType("application/json", !1), Pi(t)) : t;
   }],
   transformResponse: [function(t) {
     const r = this.transitional || We.transitional, n = r && r.forcedJSONParsing, i = this.responseType === "json";
@@ -2413,7 +2413,7 @@ const We = {
 h.forEach(["delete", "get", "head", "post", "put", "patch"], (e) => {
   We.headers[e] = {};
 });
-const Fi = h.toObjectSet([
+const Bi = h.toObjectSet([
   "age",
   "authorization",
   "content-length",
@@ -2431,12 +2431,12 @@ const Fi = h.toObjectSet([
   "referer",
   "retry-after",
   "user-agent"
-]), Pi = (e) => {
+]), Ui = (e) => {
   const t = {};
   let r, n, i;
   return e && e.split(`
 `).forEach(function(s) {
-    i = s.indexOf(":"), r = s.substring(0, i).trim().toLowerCase(), n = s.substring(i + 1).trim(), !(!r || t[r] && Fi[r]) && (r === "set-cookie" ? t[r] ? t[r].push(n) : t[r] = [n] : t[r] = t[r] ? t[r] + ", " + n : n);
+    i = s.indexOf(":"), r = s.substring(0, i).trim().toLowerCase(), n = s.substring(i + 1).trim(), !(!r || t[r] && Bi[r]) && (r === "set-cookie" ? t[r] ? t[r].push(n) : t[r] = [n] : t[r] = t[r] ? t[r] + ", " + n : n);
   }), t;
 }, gr = /* @__PURE__ */ Symbol("internals");
 function Me(e) {
@@ -2445,14 +2445,14 @@ function Me(e) {
 function tt(e) {
   return e === !1 || e == null ? e : h.isArray(e) ? e.map(tt) : String(e);
 }
-function Bi(e) {
+function Ni(e) {
   const t = /* @__PURE__ */ Object.create(null), r = /([^\s,;=]+)\s*(?:=\s*([^,;]+))?/g;
   let n;
   for (; n = r.exec(e); )
     t[n[1]] = n[2];
   return t;
 }
-const Ui = (e) => /^[-_a-zA-Z0-9^`|~,!#$%&'*+.]+$/.test(e.trim());
+const Li = (e) => /^[-_a-zA-Z0-9^`|~,!#$%&'*+.]+$/.test(e.trim());
 function kt(e, t, r, n, i) {
   if (h.isFunction(n))
     return n.call(this, t, r);
@@ -2463,10 +2463,10 @@ function kt(e, t, r, n, i) {
       return n.test(t);
   }
 }
-function Ni(e) {
+function Mi(e) {
   return e.trim().toLowerCase().replace(/([a-z\d])(\w*)/g, (t, r, n) => r.toUpperCase() + n);
 }
-function Li(e, t) {
+function Di(e, t) {
   const r = h.toCamelCase(" " + t);
   ["get", "set", "has"].forEach((n) => {
     Object.defineProperty(e, n + r, {
@@ -2493,8 +2493,8 @@ let J = class {
     const s = (d, p) => h.forEach(d, (f, x) => a(f, x, p));
     if (h.isPlainObject(t) || t instanceof this.constructor)
       s(t, r);
-    else if (h.isString(t) && (t = t.trim()) && !Ui(t))
-      s(Pi(t), r);
+    else if (h.isString(t) && (t = t.trim()) && !Li(t))
+      s(Ui(t), r);
     else if (h.isObject(t) && h.isIterable(t)) {
       let d = {}, p, f;
       for (const x of t) {
@@ -2515,7 +2515,7 @@ let J = class {
         if (!r)
           return i;
         if (r === !0)
-          return Bi(i);
+          return Ni(i);
         if (h.isFunction(r))
           return r.call(this, i, n);
         if (h.isRegExp(r))
@@ -2559,7 +2559,7 @@ let J = class {
         r[s] = tt(i), delete r[a];
         return;
       }
-      const d = t ? Ni(a) : String(a).trim();
+      const d = t ? Mi(a) : String(a).trim();
       d !== a && delete r[a], r[d] = tt(i), n[d] = !0;
     }), this;
   }
@@ -2598,7 +2598,7 @@ let J = class {
     }).accessors, i = this.prototype;
     function a(s) {
       const d = Me(s);
-      n[d] || (Li(i, s), n[d] = !0);
+      n[d] || (Di(i, s), n[d] = !0);
     }
     return h.isArray(t) ? t.forEach(a) : a(t), this;
   }
@@ -2640,11 +2640,11 @@ function Gr(e, t, r) {
     r
   ));
 }
-function Mi(e) {
+function Ii(e) {
   const t = /^([-+\w]{1,25})(:?\/\/|:)/.exec(e);
   return t && t[1] || "";
 }
-function Di(e, t) {
+function Hi(e, t) {
   e = e || 10;
   const r = new Array(e), n = new Array(e);
   let i = 0, a = 0, s;
@@ -2660,7 +2660,7 @@ function Di(e, t) {
     return P ? Math.round(_ * 1e3 / P) : void 0;
   };
 }
-function Ii(e, t) {
+function ji(e, t) {
   let r = 0, n = 1e3 / t, i, a;
   const s = (f, x = Date.now()) => {
     r = x, i = null, a && (clearTimeout(a), a = null), e(...f);
@@ -2674,8 +2674,8 @@ function Ii(e, t) {
 }
 const st = (e, t, r = 3) => {
   let n = 0;
-  const i = Di(50, 250);
-  return Ii((a) => {
+  const i = Hi(50, 250);
+  return ji((a) => {
     const s = a.loaded, d = a.lengthComputable ? a.total : void 0, p = s - n, f = i(p), x = s <= d;
     n = s;
     const A = {
@@ -2698,10 +2698,10 @@ const st = (e, t, r = 3) => {
     total: e,
     loaded: n
   }), t[1]];
-}, Er = (e) => (...t) => h.asap(() => e(...t)), Hi = j.hasStandardBrowserEnv ? /* @__PURE__ */ ((e, t) => (r) => (r = new URL(r, j.origin), e.protocol === r.protocol && e.host === r.host && (t || e.port === r.port)))(
+}, Er = (e) => (...t) => h.asap(() => e(...t)), qi = j.hasStandardBrowserEnv ? /* @__PURE__ */ ((e, t) => (r) => (r = new URL(r, j.origin), e.protocol === r.protocol && e.host === r.host && (t || e.port === r.port)))(
   new URL(j.origin),
   j.navigator && /(msie|trident)/i.test(j.navigator.userAgent)
-) : () => !0, ji = j.hasStandardBrowserEnv ? (
+) : () => !0, zi = j.hasStandardBrowserEnv ? (
   // Standard browser envs support document.cookie
   {
     write(e, t, r, n, i, a) {
@@ -2728,15 +2728,15 @@ const st = (e, t, r = 3) => {
     }
   }
 );
-function qi(e) {
+function Vi(e) {
   return /^([a-z][a-z\d+\-.]*:)?\/\//i.test(e);
 }
-function zi(e, t) {
+function $i(e, t) {
   return t ? e.replace(/\/?\/$/, "") + "/" + t.replace(/^\/+/, "") : e;
 }
 function Xr(e, t, r) {
-  let n = !qi(t);
-  return e && (n || r == !1) ? zi(e, t) : t;
+  let n = !Vi(t);
+  return e && (n || r == !1) ? $i(e, t) : t;
 }
 const vr = (e) => e instanceof J ? { ...e } : e;
 function me(e, t) {
@@ -2819,12 +2819,12 @@ const Yr = (e) => {
       s.setContentType([f || "multipart/form-data", ...x].join("; "));
     }
   }
-  if (j.hasStandardBrowserEnv && (n && h.isFunction(n) && (n = n(t)), n || n !== !1 && Hi(t.url))) {
-    const f = i && a && ji.read(a);
+  if (j.hasStandardBrowserEnv && (n && h.isFunction(n) && (n = n(t)), n || n !== !1 && qi(t.url))) {
+    const f = i && a && zi.read(a);
     f && s.set(i, f);
   }
   return t;
-}, Vi = typeof XMLHttpRequest < "u", $i = Vi && function(e) {
+}, Wi = typeof XMLHttpRequest < "u", Ji = Wi && function(e) {
   return new Promise(function(r, n) {
     const i = Yr(e);
     let a = i.data;
@@ -2874,14 +2874,14 @@ const Yr = (e) => {
     }), h.isUndefined(i.withCredentials) || (S.withCredentials = !!i.withCredentials), d && d !== "json" && (S.responseType = i.responseType), f && ([_, R] = st(f, !0), S.addEventListener("progress", _)), p && S.upload && ([A, P] = st(p), S.upload.addEventListener("progress", A), S.upload.addEventListener("loadend", P)), (i.cancelToken || i.signal) && (x = (M) => {
       S && (n(!M || M.type ? new ke(null, e, S) : M), S.abort(), S = null);
     }, i.cancelToken && i.cancelToken.subscribe(x), i.signal && (i.signal.aborted ? x() : i.signal.addEventListener("abort", x)));
-    const B = Mi(i.url);
+    const B = Ii(i.url);
     if (B && j.protocols.indexOf(B) === -1) {
       n(new F("Unsupported protocol " + B + ":", F.ERR_BAD_REQUEST, e));
       return;
     }
     S.send(a || null);
   });
-}, Wi = (e, t) => {
+}, Ki = (e, t) => {
   const { length: r } = e = e ? e.filter(Boolean) : [];
   if (t || r) {
     let n = new AbortController(), i;
@@ -2904,7 +2904,7 @@ const Yr = (e) => {
     const { signal: p } = n;
     return p.unsubscribe = () => h.asap(d), p;
   }
-}, Ji = function* (e, t) {
+}, Gi = function* (e, t) {
   let r = e.byteLength;
   if (r < t) {
     yield e;
@@ -2913,10 +2913,10 @@ const Yr = (e) => {
   let n = 0, i;
   for (; n < r; )
     i = n + t, yield e.slice(n, i), n = i;
-}, Ki = async function* (e, t) {
-  for await (const r of Gi(e))
-    yield* Ji(r, t);
-}, Gi = async function* (e) {
+}, Xi = async function* (e, t) {
+  for await (const r of Yi(e))
+    yield* Gi(r, t);
+}, Yi = async function* (e) {
   if (e[Symbol.asyncIterator]) {
     yield* e;
     return;
@@ -2933,7 +2933,7 @@ const Yr = (e) => {
     await t.cancel();
   }
 }, Ar = (e, t, r, n) => {
-  const i = Ki(e, t);
+  const i = Xi(e, t);
   let a = 0, s, d = (p) => {
     s || (s = !0, n && n(p));
   };
@@ -2961,13 +2961,13 @@ const Yr = (e) => {
   }, {
     highWaterMark: 2
   });
-}, pt = typeof fetch == "function" && typeof Request == "function" && typeof Response == "function", Zr = pt && typeof ReadableStream == "function", Xi = pt && (typeof TextEncoder == "function" ? /* @__PURE__ */ ((e) => (t) => e.encode(t))(new TextEncoder()) : async (e) => new Uint8Array(await new Response(e).arrayBuffer())), Qr = (e, ...t) => {
+}, pt = typeof fetch == "function" && typeof Request == "function" && typeof Response == "function", Zr = pt && typeof ReadableStream == "function", Zi = pt && (typeof TextEncoder == "function" ? /* @__PURE__ */ ((e) => (t) => e.encode(t))(new TextEncoder()) : async (e) => new Uint8Array(await new Response(e).arrayBuffer())), Qr = (e, ...t) => {
   try {
     return !!e(...t);
   } catch {
     return !1;
   }
-}, Yi = Zr && Qr(() => {
+}, Qi = Zr && Qr(() => {
   let e = !1;
   const t = new Request(j.origin, {
     body: new ReadableStream(),
@@ -2987,7 +2987,7 @@ pt && ((e) => {
     });
   });
 })(new Response());
-const Zi = async (e) => {
+const eo = async (e) => {
   if (e == null)
     return 0;
   if (h.isBlob(e))
@@ -3000,11 +3000,11 @@ const Zi = async (e) => {
   if (h.isArrayBufferView(e) || h.isArrayBuffer(e))
     return e.byteLength;
   if (h.isURLSearchParams(e) && (e = e + ""), h.isString(e))
-    return (await Xi(e)).byteLength;
-}, Qi = async (e, t) => {
+    return (await Zi(e)).byteLength;
+}, to = async (e, t) => {
   const r = h.toFiniteNumber(e.getContentLength());
-  return r ?? Zi(t);
-}, eo = pt && (async (e) => {
+  return r ?? eo(t);
+}, ro = pt && (async (e) => {
   let {
     url: t,
     method: r,
@@ -3020,13 +3020,13 @@ const Zi = async (e) => {
     fetchOptions: _
   } = Yr(e);
   f = f ? (f + "").toLowerCase() : "text";
-  let P = Wi([i, a && a.toAbortSignal()], s), R;
+  let P = Ki([i, a && a.toAbortSignal()], s), R;
   const k = P && P.unsubscribe && (() => {
     P.unsubscribe();
   });
   let S;
   try {
-    if (p && Yi && r !== "get" && r !== "head" && (S = await Qi(x, n)) !== 0) {
+    if (p && Qi && r !== "get" && r !== "head" && (S = await to(x, n)) !== 0) {
       let H = new Request(t, {
         method: "POST",
         body: n,
@@ -3090,9 +3090,9 @@ const Zi = async (e) => {
     ) : F.from(U, U && U.code, e, R);
   }
 }), It = {
-  http: bi,
-  xhr: $i,
-  fetch: eo
+  http: mi,
+  xhr: Ji,
+  fetch: ro
 };
 h.forEach(It, (e, t) => {
   if (e) {
@@ -3103,7 +3103,7 @@ h.forEach(It, (e, t) => {
     Object.defineProperty(e, "adapterName", { value: t });
   }
 });
-const Sr = (e) => `- ${e}`, to = (e) => h.isFunction(e) || e === null || e === !1, en = {
+const Sr = (e) => `- ${e}`, no = (e) => h.isFunction(e) || e === null || e === !1, en = {
   getAdapter: (e) => {
     e = h.isArray(e) ? e : [e];
     const { length: t } = e;
@@ -3112,7 +3112,7 @@ const Sr = (e) => `- ${e}`, to = (e) => h.isFunction(e) || e === null || e === !
     for (let a = 0; a < t; a++) {
       r = e[a];
       let s;
-      if (n = r, !to(r) && (n = It[(s = String(r)).toLowerCase()], n === void 0))
+      if (n = r, !no(r) && (n = It[(s = String(r)).toLowerCase()], n === void 0))
         throw new F(`Unknown adapter '${s}'`);
       if (n)
         break;
@@ -3184,7 +3184,7 @@ bt.transitional = function(t, r, n) {
 bt.spelling = function(t) {
   return (r, n) => (console.warn(`${n} is likely a misspelling of ${t}`), !0);
 };
-function ro(e, t, r) {
+function io(e, t, r) {
   if (typeof e != "object")
     throw new F("options must be an object", F.ERR_BAD_OPTION_VALUE);
   const n = Object.keys(e);
@@ -3202,7 +3202,7 @@ function ro(e, t, r) {
   }
 }
 const rt = {
-  assertOptions: ro,
+  assertOptions: io,
   validators: bt
 }, ee = rt.validators;
 let we = class {
@@ -3329,7 +3329,7 @@ h.forEach(["post", "put", "patch"], function(t) {
   }
   we.prototype[t] = r(), we.prototype[t + "Form"] = r(!0);
 });
-let no = class rn {
+let oo = class rn {
   constructor(t) {
     if (typeof t != "function")
       throw new TypeError("executor must be a function.");
@@ -3402,12 +3402,12 @@ let no = class rn {
     };
   }
 };
-function io(e) {
+function so(e) {
   return function(r) {
     return e.apply(null, r);
   };
 }
-function oo(e) {
+function ao(e) {
   return h.isObject(e) && e.isAxiosError === !0;
 }
 const Ht = {
@@ -3487,7 +3487,7 @@ function nn(e) {
 const D = nn(We);
 D.Axios = we;
 D.CanceledError = ke;
-D.CancelToken = no;
+D.CancelToken = oo;
 D.isCancel = Kr;
 D.VERSION = tn;
 D.toFormData = ht;
@@ -3496,8 +3496,8 @@ D.Cancel = D.CanceledError;
 D.all = function(t) {
   return Promise.all(t);
 };
-D.spread = io;
-D.isAxiosError = oo;
+D.spread = so;
+D.isAxiosError = ao;
 D.mergeConfig = me;
 D.AxiosHeaders = J;
 D.formToJSON = (e) => Jr(h.isHTMLForm(e) ? new FormData(e) : e);
@@ -3521,13 +3521,13 @@ const {
   formToJSON: No,
   getAdapter: Lo,
   mergeConfig: Mo
-} = D, so = async () => {
+} = D, co = async () => {
   try {
     return (await D.get("https://api.ipify.org?format=json")).data.ip;
   } catch (e) {
     console.error("Error getting IP:", e);
   }
-}, ao = async (e = 3e3, t = 200) => new Promise((r) => {
+}, lo = async (e = 3e3, t = 200) => new Promise((r) => {
   const n = Date.now(), i = setInterval(() => {
     (jt() || Date.now() - n > e) && (clearInterval(i), r(jt()));
   }, t);
@@ -3559,18 +3559,18 @@ function Ze(e, t, r = {}) {
   }
   document.cookie = n;
 }
-function co(e) {
+function uo(e) {
   Array.isArray(e) || (e = [e]);
   const t = "Thu, 01 Jan 1970 00:00:00 GMT";
   e.forEach((r) => {
     document.cookie = `${r}=; Path=/; Expires=${t}`, document.cookie = `${r}=; Path=/; Domain=${location.hostname}; Expires=${t}`;
   });
 }
-const lo = "https://api.blockbots.org";
-async function uo(e, t) {
+const fo = "https://api.blockbots.org";
+async function ho(e, t) {
   try {
     return (await D.post(
-      lo + "/v1/js",
+      fo + "/v1/js",
       e,
       {
         headers: {
@@ -3586,15 +3586,15 @@ async function uo(e, t) {
 const kr = async (e) => {
   let t = {};
   const r = ae(navigator.userAgent);
-  t.os = r.os.name, t.useragent = navigator.userAgent, t.fingerprint = await bn(), t.bl_fingerprint = await wn(), t.lang = navigator.language, t.ip = await so(), t.st = qe("__bbst"), t.ts = qe("__bbts"), console.log(t), await Cn();
-  const n = await uo(t, e);
+  t.os = r.os.name, t.useragent = navigator.userAgent, t.fingerprint = await mn(), t.bl_fingerprint = await yn(), t.lang = navigator.language, t.ip = await co(), t.st = qe("__bbst"), t.ts = qe("__bbts"), console.log(t), await Fn();
+  const n = await ho(t, e);
   n && n.status === !0 && n.__bbst && n.__bbts && (Ze("__bbst", n.__bbst, { "Max-Age": 240, Secure: !0 }), Ze("__bbts", n.__bbts, { "Max-Age": 240, Secure: !0 }), Ze("__bbjwt", n.__bbjwt, { "Max-Age": 240, Secure: !0 })), n && n.status === "forbidden" && Ze("__bb_decision", "1", { "Max-Age": 640, Secure: !0 });
 };
-async function fo(e) {
+async function po(e) {
   return new Promise((t) => setTimeout(t, e));
 }
-const ho = "https://api.blockbots.org";
-async function po() {
+const bo = "https://api.blockbots.org";
+async function wo() {
   try {
     const e = qe("__bbst"), t = qe("__bbts");
     if (!e || !t) return !1;
@@ -3602,15 +3602,15 @@ async function po() {
       st: e,
       ts: t
     });
-    return (await D.get(ho + "/validate?" + r.toString())).status === 200;
+    return (await D.get(bo + "/validate?" + r.toString())).status === 200;
   } catch {
-    return co(["__bbst", "__bbts"]), !1;
+    return uo(["__bbst", "__bbts"]), !1;
   }
 }
-function bo(e, t) {
+function mo(e, t) {
   return t = { exports: {} }, e(t, t.exports), t.exports;
 }
-var le = bo(function(e, t) {
+var le = mo(function(e, t) {
   (function(r) {
     var n = "function", i = "isNode", a = function(p, f) {
       return typeof p === f;
@@ -3644,7 +3644,7 @@ var le = bo(function(e, t) {
   });
 });
 let qt = !1;
-function wo() {
+function on() {
   if (qt) return;
   qt = !0, document.body.innerHTML = `
       <div class="main-wrapper" role="main">
@@ -3681,7 +3681,7 @@ function wo() {
     )
   );
 }
-function mo() {
+function sn() {
   const e = document.getElementById("loader-status"), t = document.getElementById("loader");
   t && t.remove(), e && (e.textContent = "Access blocked. Automated traffic detected.", e.style.color = "#e5533d", e.style.fontWeight = "600");
 }
@@ -3689,14 +3689,14 @@ function yo() {
   document.body.innerHTML = "", qt = !1;
 }
 async function go({ apiKey: e, retries: t, delay: r, ui: n }) {
-  n && wo();
+  n && on();
   for (let i = 0; i < t && !qe("__bb_decision"); i++)
-    if (!(!jt() && (await kr(e), !await ao()))) {
-      if (await po())
+    if (!(!jt() && (await kr(e), !await lo()))) {
+      if (await wo())
         return n && yo(), !0;
-      await kr(e), await fo(r);
+      await kr(e), await po(r);
     }
-  return n && mo(), !1;
+  return n && sn(), !1;
 }
 class Do {
   constructor({
@@ -3707,8 +3707,17 @@ class Do {
   }) {
     if (!t)
       throw new Error("BlockBots: apiKey is required");
-    this.apiKey = t, this.retries = r, this.delay = n, this.ui = !0, this.hooks = on();
+    this.apiKey = t, this.retries = r, this.delay = n, this.ui = !0, this.hooks = an();
   }
+  /*static showLoader() {
+      showLoader();
+  }*/
+  static setLoaderBlocked() {
+    on(), sn();
+  }
+  /*static hideLoader() {
+      hideLoader();
+  }*/
   onVerified(t) {
     return this.hooks.on("verified", t), this;
   }
