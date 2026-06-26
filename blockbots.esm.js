@@ -3608,7 +3608,22 @@ const fo = async () => {
     e.cloud_phone_suspect = !1;
   }
   return e;
-}, vo = async (e = 3e3, t = 200) => new Promise((r) => {
+}, vo = [
+  "playwright",
+  "puppeteer",
+  "webdriver",
+  "cdp_cdc_property",
+  "cdp_binding",
+  "cdp_perf_marks",
+  "cdp_debugger_api",
+  "cdp_patched_tostring",
+  "headless_ua",
+  "no_plugins",
+  "no_languages",
+  "permissions_inconsistent",
+  "heap_static",
+  "cloud_phone_suspect"
+], _o = (e) => vo.map((t) => e[t] ? "1" : "0").join(""), So = async (e = 3e3, t = 200) => new Promise((r) => {
   const n = Date.now(), i = setInterval(() => {
     (jt() || Date.now() - n > e) && (clearInterval(i), r(jt()));
   }, t);
@@ -3640,19 +3655,19 @@ function Xe(e, t, r = {}) {
   }
   document.cookie = n;
 }
-function _o(e) {
+function Ao(e) {
   Array.isArray(e) || (e = [e]);
   const t = "Thu, 01 Jan 1970 00:00:00 GMT";
   e.forEach((r) => {
     document.cookie = `${r}=; Path=/; Expires=${t}`, document.cookie = `${r}=; Path=/; Domain=${location.hostname}; Expires=${t}`;
   });
 }
-const So = "https://api.blockbots.org";
-async function Ao(e, t) {
+const Ro = "https://api.blockbots.org";
+async function Oo(e, t) {
   var r, n;
   try {
     return (await D.post(
-      So + "/v1/js",
+      Ro + "/v1/js",
       e,
       {
         headers: {
@@ -3668,15 +3683,15 @@ async function Ao(e, t) {
 const Tr = async (e) => {
   let t = {};
   const r = ae(navigator.userAgent);
-  t.os = r.os.name, t.useragent = navigator.userAgent, t.fingerprint = await gn(), t.bl_fingerprint = await yn(), t.lang = navigator.language, t.automation = await Eo(), t.ip = await fo(), t.st = je("__bbst"), t.ts = je("__bbts"), console.log(t), await Pn();
-  const n = await Ao(t, e);
+  t.os = r.os.name, t.ua = navigator.userAgent, t.fp = await gn(), t.bl_fp = await yn(), t.lang = navigator.language, t.s = _o(await Eo()), t.ip = await fo(), t.st = je("__bbst"), t.ts = je("__bbts"), console.log(t), await Pn();
+  const n = await Oo(t, e);
   n && n.status === !0 && n.__bbst && n.__bbts && (Xe("__bbst", n.__bbst, { "Max-Age": 240, Secure: !0 }), Xe("__bbts", n.__bbts, { "Max-Age": 240, Secure: !0 }), Xe("__bbjwt", n.__bbjwt, { "Max-Age": 240, Secure: !0 })), n && n.status === "forbidden" && Xe("__bb_decision", "1", { "Max-Age": 240, Secure: !0 });
 };
-async function Ro(e) {
+async function ko(e) {
   return new Promise((t) => setTimeout(t, e));
 }
-const Oo = "https://api.blockbots.org";
-async function ko() {
+const Co = "https://api.blockbots.org";
+async function To() {
   try {
     const e = je("__bbst"), t = je("__bbts");
     if (!e || !t)
@@ -3685,15 +3700,15 @@ async function ko() {
       st: e,
       ts: t
     });
-    return (await D.get(Oo + "/validate?" + r.toString())).status === 200;
+    return (await D.get(Co + "/validate?" + r.toString())).status === 200;
   } catch {
-    return _o(["__bbst", "__bbts"]), !1;
+    return Ao(["__bbst", "__bbts"]), !1;
   }
 }
-function Co(e, t) {
+function Fo(e, t) {
   return t = { exports: {} }, e(t, t.exports), t.exports;
 }
-var le = Co(function(e, t) {
+var le = Fo(function(e, t) {
   (function(r) {
     var n = "function", i = "isNode", a = function(p, f) {
       return typeof p === f;
@@ -3737,7 +3752,7 @@ function an() {
       <div class="footer" role="contentinfo">
         <div class="footer-inner">
           <div class="text-center" id="footer-text">
-            Performance & security by BlockBots
+            Performance & security by <a href="https://blockbots.org" rel="nofollow noopener">BlockBots</a>
           </div>
         </div>
       </div>
@@ -3769,20 +3784,20 @@ function cn() {
   const e = document.getElementById("loader-status"), t = document.getElementById("loader");
   t && t.remove(), e && (e.textContent = "Access blocked. Automated traffic detected.", e.style.color = "#e5533d", e.style.fontWeight = "600");
 }
-function To() {
+function Po() {
   document.body.innerHTML = "", qt = !1;
 }
-async function Fo({ apiKey: e, retries: t, delay: r, ui: n }) {
+async function Bo({ apiKey: e, retries: t, delay: r, ui: n }) {
   n && an();
   for (let i = 0; i < t && !je("__bb_decision"); i++)
-    if (!(!jt() && (await Tr(e), !await vo()))) {
-      if (await ko())
-        return n && To(), !0;
-      await Tr(e), await Ro(r);
+    if (!(!jt() && (await Tr(e), !await So()))) {
+      if (await To())
+        return n && Po(), !0;
+      await Tr(e), await ko(r);
     }
   return n && cn(), !1;
 }
-class Po {
+class Uo {
   constructor({
     apiKey: t,
     retries: r = 3,
@@ -3813,7 +3828,7 @@ class Po {
   }
   async verify() {
     try {
-      return await Fo({
+      return await Bo({
         apiKey: this.apiKey,
         retries: this.retries,
         delay: this.delay,
@@ -3825,5 +3840,5 @@ class Po {
   }
 }
 export {
-  Po as BlockBots
+  Uo as BlockBots
 };
