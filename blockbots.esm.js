@@ -3694,12 +3694,12 @@ async function Pf(e, t) {
     return console.error("Request failed:", ((r = o.response) == null ? void 0 : r.data) || o.message), (n = o.response) == null ? void 0 : n.data;
   }
 }
-const La = async (e, t = null) => {
-  let r = {};
-  const n = yt(navigator.userAgent);
-  r.os = n.os.name, r.ua = navigator.userAgent, r.fp = await Ac(), r.bl_fp = await Rc(), r.lang = navigator.language, r.s = Xc(await Gc()), r.st = Gr("__bbst"), r.ts = Gr("__bbts"), t && (r.captcha_token = t), console.log(r), await Uc();
-  const o = await Pf(r, e);
-  return o && o.status === !0 && o.__bbst && o.__bbts && (Jt("__bbst", o.__bbst, { "Max-Age": 240, Secure: !0 }), Jt("__bbts", o.__bbts, { "Max-Age": 240, Secure: !0 }), o.__bbjwt && Jt("__bbjwt", o.__bbjwt, { "Max-Age": 240, Secure: !0 })), o && o.status === "forbidden" && Jt("__bb_decision", "1", { "Max-Age": 240, Secure: !0 }), o;
+const La = async (e, t = null, r = null) => {
+  let n = {};
+  const o = yt(navigator.userAgent);
+  n.os = o.os.name, n.ua = navigator.userAgent, n.fp = await Ac(), n.bl_fp = await Rc(), n.lang = navigator.language, n.s = Xc(await Gc()), n.st = Gr("__bbst"), n.ts = Gr("__bbts"), r && (n.extra_token = r), console.log(n), await Uc();
+  const i = await Pf(n, e);
+  return i && i.status === !0 && i.__bbst && i.__bbts && (Jt("__bbst", i.__bbst, { "Max-Age": 240, Secure: !0 }), Jt("__bbts", i.__bbts, { "Max-Age": 240, Secure: !0 }), i.__bbjwt && Jt("__bbjwt", i.__bbjwt, { "Max-Age": 240, Secure: !0 })), i && i.status === "forbidden" && Jt("__bb_decision", "1", { "Max-Age": 240, Secure: !0 }), i;
 };
 async function Lf(e) {
   return new Promise((t) => setTimeout(t, e));
@@ -6993,19 +6993,19 @@ async function Nh(e, t) {
     });
   });
 }
-async function Ih({ apiKey: e, retries: t, delay: r, ui: n }) {
-  n && Cs();
-  for (let o = 0; o < t && !Gr("__bb_decision"); o++) {
+async function Ih({ apiKey: e, retries: t, delay: r, extraToken: n, ui: o }) {
+  o && Cs();
+  for (let i = 0; i < t && !Gr("__bb_decision"); i++) {
     if (!Io()) {
-      const i = await La(e);
-      if (console.log("[blockbots] sendFingerprints result:", i), i && i.status === "challenge" && (n && Uf(), await Nh(e, i.challenge)), !await Yc())
+      const a = await La(e, null, n);
+      if (console.log("[blockbots] sendFingerprints result:", a), a && a.status === "challenge" && (o && Uf(), await Nh(e, a.challenge)), !await Yc())
         continue;
     }
     if (await If())
-      return n && Bf(), !0;
-    await La(e), await Lf(r);
+      return o && Bf(), !0;
+    await La(e, null, n), await Lf(r);
   }
-  return n && Ss(), !1;
+  return o && Ss(), !1;
 }
 class Uh {
   constructor({
