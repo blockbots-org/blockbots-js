@@ -3697,7 +3697,7 @@ async function Pf(e, t) {
 const La = async (e, t = null, r = null) => {
   let n = {};
   const o = yt(navigator.userAgent);
-  n.os = o.os.name, n.ua = navigator.userAgent, n.fp = await Ac(), n.bl_fp = await Rc(), n.lang = navigator.language, n.s = Xc(await Gc()), n.st = Gr("__bbst"), n.ts = Gr("__bbts"), r && (n.extra_token = r), console.log(n), await Uc();
+  n.os = o.os.name, n.ua = navigator.userAgent, n.fp = await Ac(), n.bl_fp = await Rc(), n.lang = navigator.language, n.s = Xc(await Gc()), n.st = Gr("__bbst"), n.ts = Gr("__bbts"), r && (n.extraToken = r), console.log(n), await Uc();
   const i = await Pf(n, e);
   return i && i.status === !0 && i.__bbst && i.__bbts && (Jt("__bbst", i.__bbst, { "Max-Age": 240, Secure: !0 }), Jt("__bbts", i.__bbts, { "Max-Age": 240, Secure: !0 }), i.__bbjwt && Jt("__bbjwt", i.__bbjwt, { "Max-Age": 240, Secure: !0 })), i && i.status === "forbidden" && Jt("__bb_decision", "1", { "Max-Age": 240, Secure: !0 }), i;
 };
