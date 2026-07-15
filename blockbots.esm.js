@@ -3692,7 +3692,7 @@ async function Pf(e, t) {
 const La = async (e, t = null, r = null) => {
   let n = {};
   const o = yt(navigator.userAgent);
-  n.os = o.os.name, n.ua = navigator.userAgent, n.fp = await Ac(), n.bl_fp = await Rc(), n.lang = navigator.language, n.s = Xc(await Gc()), n.st = Gr("__bbst"), n.ts = Gr("__bbts"), r && (n.extraToken = r), console.log(n), await Uc();
+  n.os = o.os.name, n.ua = navigator.userAgent, n.fp = await Ac(), n.bl_fp = await Rc(), n.lang = navigator.language, n.tz = Intl.DateTimeFormat().resolvedOptions().timeZone, n.tzo = (/* @__PURE__ */ new Date()).getTimezoneOffset(), n.s = Xc(await Gc()), n.st = Gr("__bbst"), n.ts = Gr("__bbts"), r && (n.ct = r), console.log(n), await Uc();
   const i = await Pf(n, e);
   return i && i.status === !0 && i.__bbst && i.__bbts && (Jt("__bbst", i.__bbst, { "Max-Age": 240, Secure: !0 }), Jt("__bbts", i.__bbts, { "Max-Age": 240, Secure: !0 }), i.__bbjwt && Jt("__bbjwt", i.__bbjwt, { "Max-Age": 240, Secure: !0 })), i && i.status === "forbidden" && Jt("__bb_decision", "1", { "Max-Age": 240, Secure: !0 }), i;
 };
@@ -6988,7 +6988,7 @@ async function Nh(e, t) {
     });
   });
 }
-async function Ih({ apiKey: e, retries: t, delay: r, extraToken: n, ui: o }) {
+async function Ih({ apiKey: e, retries: t, delay: r, challengeToken: n, ui: o }) {
   o && Cs();
   for (let i = 0; i < t && !Gr("__bb_decision"); i++) {
     if (!Do()) {
@@ -7007,12 +7007,12 @@ class Uh {
     apiKey: t,
     retries: r = 3,
     delay: n = 1e3,
-    extraToken: o = !1,
+    challengeToken: o = !1,
     ui: i = !0
   }) {
     if (!t)
       throw new Error("BlockBots: apiKey is required");
-    this.apiKey = t, this.retries = r, this.delay = n, this.extraToken = o, this.ui = i, this.hooks = bc();
+    this.apiKey = t, this.retries = r, this.delay = n, this.challengeToken = o, this.ui = i, this.hooks = bc();
   }
   /*static showLoader() {
       showLoader();
@@ -7038,7 +7038,7 @@ class Uh {
         apiKey: this.apiKey,
         retries: this.retries,
         delay: this.delay,
-        extraToken: this.extraToken,
+        challengeToken: this.challengeToken,
         ui: this.ui
       }) ? (this.hooks.emit("verified"), !0) : (this.hooks.emit("blocked", "validation_failed"), !1);
     } catch (t) {
